@@ -8,7 +8,7 @@ var map = L.map('map',{
     scrollWheelZoom: false,
     doubleClickZoom: false,
     //  boxZoom: false,
-    //  keyboard: false,
+    keyboard: false,
     //  tap: false,
     touchZoom: false}
 ).setView([39.5, -8], 7);
@@ -33,23 +33,38 @@ fetch("portugal_district.geojson")
             };
         }
 
-        function onEachFeature(feature, layer) {
+var selectedLayer = null;
 
-            layer.on({
-                mouseover: function (e) {
-                    var name = feature.properties.name;
-                    var info = stats[name] ;
+function onEachFeature(feature, layer) {
+    layer.on({
+        mouseover: function (e) {
+            var name = feature.properties.name;
+            var info = stats[name];
+            layer.bindTooltip(name + "<br>" + info).openTooltip();
+            layer.setStyle({ fillColor: "#15a821" });
+        },
 
-                    layer.bindTooltip(name + "<br>" + info).openTooltip();
-                    layer.setStyle({ fillColor: "#ffffff" });
-                },
+        mouseout: function (e) {
+            geojson.resetStyle(layer);
+            if (selectedLayer === layer) {
+                layer.setStyle({ fillColor: "#15a821" ,color: "#356040", weight: 3}); // re-apply highlight if still selected
+            }
+        },
 
-                mouseout: function (e) {
-                    geojson.resetStyle(layer);
-                }
+        click: function (e) {
+            if (selectedLayer) {
+                geojson.resetStyle(selectedLayer); // reset previous
+            }
+            selectedLayer = layer;
+            layer.setStyle({
+                color: "#356040",  // red border
+                weight: 3,         // thicker border
+                fillColor: "#15a821"
             });
+            layer.bringToFront();
         }
-
+    });
+}
         var geojson = L.geoJSON(data, {
             style: style,
             onEachFeature: onEachFeature
@@ -57,6 +72,10 @@ fetch("portugal_district.geojson")
 
     });
 }
+
+
+
+
 
 function toggleLanguage() {
     currentLang = currentLang === "en" ? "pt" : "en";

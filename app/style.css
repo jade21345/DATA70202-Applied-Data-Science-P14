@@ -22,19 +22,26 @@ section {
     border-radius: 8px;
 }
 
+#map{ 
+    background-color: #f4f4f4; 
+}
+
+.leaflet-interactive:focus {
+    outline: none;
+}
 
 
 
 .navbar button {
     border: none;
-    background-color: #006600;
+    background-color: #5fac73;
     color: white;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .navbar button:hover {
-    background-color: #004d00;
+    background-color: #5fac73;
 }
 
 .navbar {
@@ -109,7 +116,8 @@ section {
 
   .hero-button {
     display: inline-block;
-    background: #c0392b;
+    background: #356040;
+    border-radius: 15px;
     color: #fff;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 1rem;
@@ -122,8 +130,8 @@ section {
     transition: background 0.2s;
   }
 
-  .hero-btn:hover {
-    background: #a93226;
+  .hero-button:hover {
+    background: #5fac73;
   }
 
 
@@ -165,7 +173,7 @@ section {
   .service-icon {
     width: 48px;
     height: 48px;
-    color: #c0392b;
+    color: #665ea9;
   }
 
   .service-item span {
