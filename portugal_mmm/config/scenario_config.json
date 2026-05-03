@@ -1,0 +1,117 @@
+{
+  "scenario_id": "baseline_2025_mixed_model",
+  "scenario_name": "Baseline 2025 Mixed-Member Model",
+  "election_year": 2025,
+  "data_version": "v1.0",
+  "created_at": "2026-05-03",
+
+  "total_seats": 226,
+  "party_list_ratio": 0.70,
+  "single_member_ratio": 0.30,
+  "deviation_tolerance": 0.05,
+
+  "tier_split_rounding": "floor",
+  "_tier_split_rounding_options": ["floor", "round", "ceil"],
+  "_tier_split_rounding_note": "Method for converting party_list_ratio*S into integer party-list seats. 'floor' matches the client's RESULTS_2025.xlsx (mainland 70 + islands 4 = 74 single-member seats in 2025) and preserves the principle that multi-member never exceeds 70 percent. 'round' yields 69. 'ceil' yields 83.",
+
+  "district_apportionment_method": "Hamilton",
+  "party_list_allocation_method": "DHondt",
+  "lower_tier_method": "seed_region_growing",
+
+  "exclude_overseas": true,
+
+  "upper_tier_redesign": {
+    "merge_strategy": "manual",
+    "_merge_strategy_options": ["manual", "auto_threshold", "auto_nuts3"],
+    "_merge_strategy_note": "Only 'manual' is implemented. Other strategies are reserved for future development if the client requests algorithmic merging.",
+
+    "merge_groups": [
+      {
+        "name": "Trás-os-Montes",
+        "members": ["Bragança", "Vila Real"],
+        "rationale": "Historical-geographic region of north-east Portugal. Distritos correspond closely to NUTS3 'Terras de Trás-os-Montes' and 'Alto Tâmega e Barroso'."
+      },
+      {
+        "name": "Alentejo",
+        "members": ["Évora", "Beja", "Portalegre"],
+        "rationale": "Cultural macro-region matching NUTS2 Alentejo (Alto, Central, Baixo)."
+      },
+      {
+        "name": "Beira Baixa",
+        "members": ["Castelo Branco", "Guarda"],
+        "rationale": "Both small inland districts. Name is conventional rather than strictly geographic; Guarda historically belongs to 'Beira Alta'."
+      }
+    ],
+
+    "split_rules": [
+      {
+        "district": "Lisboa",
+        "method": "contiguous_balanced_partition",
+        "k": 3,
+        "balance_target": "registered_voters",
+        "random_state": 42,
+        "improve_iters": 10000
+      },
+      {
+        "district": "Porto",
+        "method": "contiguous_balanced_partition",
+        "k": 2,
+        "balance_target": "registered_voters",
+        "random_state": 42,
+        "improve_iters": 10000
+      }
+    ],
+
+    "always_merged": [
+      {
+        "name": "Madeira",
+        "members": ["Ilha da Madeira", "Ilha de Porto Santo"],
+        "rationale": "Single autonomous region; islands aggregate to one electoral district."
+      },
+      {
+        "name": "Açores",
+        "members": [
+          "Ilha de Santa Maria", "Ilha de São Miguel", "Ilha Terceira",
+          "Ilha da Graciosa", "Ilha de São Jorge", "Ilha do Pico",
+          "Ilha do Faial", "Ilha das Flores", "Ilha do Corvo"
+        ],
+        "rationale": "Single autonomous region; islands aggregate to one electoral district."
+      }
+    ]
+  },
+
+  "lower_tier": {
+    "seed_strategy": "client_provided",
+    "_seed_strategy_options": ["client_provided", "kmeans_pp_simulated", "largest_population"],
+    "_seed_strategy_note": "Use 'client_provided' when the seed_parishes.csv from the client is available; otherwise fall back to a simulated seed strategy for testing.",
+
+    "skip_districts": [],
+    "_skip_districts_note": "List redesigned upper-tier districts where lower-tier districting should be skipped (e.g. ['Madeira','Açores']) if islands prove unsuitable for single-member districting.",
+
+    "tolerance": 0.10,
+    "max_iterations": 50000,
+    "tie_break_rule": "smallest_population_first",
+    "allow_repair": true
+  },
+
+  "crs": {
+    "internal": "EPSG:3763",
+    "export": "EPSG:4326"
+  },
+
+  "paths": {
+    "raw_continente_gpkg": "data_raw/Continente_CAOP2025.gpkg",
+    "raw_madeira_gpkg": "data_raw/ArqMadeira_CAOP2025.gpkg",
+    "raw_acores_co_gpkg": "data_raw/ArqAcores_GCentral_GOriental_CAOP2025.gpkg",
+    "raw_acores_w_gpkg": "data_raw/ArqAcores_GOcidental_CAOP2025.gpkg",
+    "raw_results_xlsx": "data_raw/AR_2025_Globais_by_district_and_Parish.xlsx",
+    "raw_client_results_xlsx": "data_raw/RESULTS_2025.xlsx",
+
+    "clean_parishes_gpkg": "data_clean/parishes.gpkg",
+    "clean_municipality_voters_csv": "data_clean/municipality_voters_2025.csv",
+    "clean_election_csv": "data_clean/votes_2025.csv",
+    "clean_voters_csv": "data_clean/voters_2025.csv",
+
+    "outputs_dir": "outputs"
+  }
+}
