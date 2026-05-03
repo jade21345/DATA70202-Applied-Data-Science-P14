@@ -1,0 +1,309 @@
+municipality_id,municipality_name,registered_voters
+0101,Águeda,41669
+0102,Albergaria-a-Velha,22407
+0103,Anadia,25449
+0104,Arouca,19696
+0105,Aveiro,70189
+0106,Castelo de Paiva,14005
+0107,Espinho,29347
+0108,Estarreja,23997
+0109,Santa Maria da Feira,126913
+0110,Ílhavo,36377
+0111,Mealhada,17653
+0112,Murtosa,9947
+0113,Oliveira de Azeméis,60615
+0114,Oliveira do Bairro,20867
+0115,Ovar,51141
+0116,São João da Madeira,19346
+0117,Sever do Vouga,10170
+0118,Vagos,22523
+0119,Vale de Cambra,19733
+0201,Aljustrel,7715
+0202,Almodôvar,5922
+0203,Alvito,1873
+0204,Barrancos,1265
+0205,Beja,28325
+0206,Castro Verde,5992
+0207,Cuba,3626
+0208,Ferreira do Alentejo,6129
+0209,Mértola,5500
+0210,Moura,11784
+0211,Odemira,19394
+0212,Ourique,4096
+0213,Serpa,12139
+0214,Vidigueira,4560
+0301,Amares,17673
+0302,Barcelos,106911
+0303,Braga,167776
+0304,Cabeceiras de Basto,16821
+0305,Celorico de Basto,17294
+0306,Esposende,33704
+0307,Fafe,49948
+0308,Guimarães,143435
+0309,Póvoa de Lanhoso,22034
+0310,Terras de Bouro,6412
+0311,Vieira do Minho,12035
+0312,Vila Nova de Famalicão,121257
+0313,Vila Verde,45158
+0314,Vizela,21909
+0401,Alfândega da Fé,4991
+0402,Bragança,35175
+0403,Carrazeda de Ansiães,5781
+0404,Freixo de Espada à Cinta,2887
+0405,Macedo de Cavaleiros,17018
+0406,Miranda do Douro,6925
+0407,Mirandela,22376
+0408,Mogadouro,9468
+0409,Torre de Moncorvo,7372
+0410,Vila Flor,6561
+0411,Vimioso,5104
+0412,Vinhais,9110
+0501,Belmonte,5811
+0502,Castelo Branco,47959
+0503,Covilhã,43032
+0504,Fundão,24745
+0505,Idanha-a-Nova,7482
+0506,Oleiros,4432
+0507,Penamacor,3960
+0508,Proença-a-Nova,6534
+0509,Sertã,13143
+0510,Vila de Rei,2713
+0511,Vila Velha de Ródão,2763
+0601,Arganil,9777
+0602,Cantanhede,34080
+0603,Coimbra,124214
+0604,Condeixa-a-Nova,14778
+0605,Figueira da Foz,54388
+0606,Góis,3373
+0607,Lousã,15355
+0608,Mira,12616
+0609,Miranda do Corvo,10691
+0610,Montemor-o-Velho,21627
+0611,Oliveira do Hospital,17094
+0612,Pampilhosa da Serra,3268
+0613,Penacova,12786
+0614,Penela,4658
+0615,Soure,15755
+0616,Tábua,10090
+0617,Vila Nova de Poiares,6223
+0701,Alandroal,4320
+0702,Arraiolos,5818
+0703,Borba,5724
+0704,Estremoz,10832
+0705,Évora,46058
+0706,Montemor-o-Novo,13544
+0707,Mora,3812
+0708,Mourão,2118
+0709,Portel,4921
+0710,Redondo,5534
+0711,Reguengos de Monsaraz,8735
+0712,Vendas Novas,10007
+0713,Viana do Alentejo,4681
+0714,Vila Viçosa,6516
+0801,Albufeira,36146
+0802,Alcoutim,2183
+0803,Aljezur,3995
+0804,Castro Marim,5801
+0805,Faro,56893
+0806,Lagoa,19057
+0807,Lagos,23886
+0808,Loulé,61223
+0809,Monchique,4263
+0810,Olhão,37763
+0811,Portimão,50656
+0812,São Brás de Alportel,9315
+0813,Silves,30858
+0814,Tavira,21296
+0815,Vila do Bispo,3813
+0816,Vila Real de Santo António,16796
+0901,Aguiar da Beira,5632
+0902,Almeida,6217
+0903,Celorico da Beira,6971
+0904,Figueira de Castelo Rodrigo,5108
+0905,Fornos de Algodres,4131
+0906,Gouveia,11843
+0907,Guarda,36504
+0908,Manteigas,2912
+0909,Mêda,4935
+0910,Pinhel,8462
+0911,Sabugal,11465
+0912,Seia,20315
+0913,Trancoso,8433
+0914,Vila Nova de Foz Côa,6578
+1001,Alcobaça,48861
+1002,Alvaiázere,5726
+1003,Ansião,10952
+1004,Batalha,13957
+1005,Bombarral,11528
+1006,Caldas da Rainha,45263
+1007,Castanheira de Pêra,2463
+1008,Figueiró dos Vinhos,5022
+1009,Leiria,113509
+1010,Marinha Grande,34152
+1011,Nazaré,13994
+1012,Óbidos,10787
+1013,Pedrógão Grande,2963
+1014,Peniche,24247
+1015,Pombal,48156
+1016,Porto de Mós,20415
+1101,Alenquer,37463
+1102,Arruda dos Vinhos,12099
+1103,Azambuja,17756
+1104,Cadaval,12477
+1105,Cascais,177354
+1106,Lisboa,460723
+1107,Loures,168493
+1108,Lourinhã,24050
+1109,Mafra,70559
+1110,Oeiras,145341
+1111,Sintra,324020
+1112,Sobral de Monte Agraço,8988
+1113,Torres Vedras,71368
+1114,Vila Franca de Xira,114852
+1115,Amadora,142006
+1116,Odivelas,125396
+1201,Alter do Chão,2672
+1202,Arronches,2487
+1203,Avis,3284
+1204,Campo Maior,6968
+1205,Castelo de Vide,2612
+1206,Crato,2864
+1207,Elvas,18486
+1208,Fronteira,2597
+1209,Gavião,3084
+1210,Marvão,2494
+1211,Monforte,2559
+1212,Nisa,5510
+1213,Ponte de Sor,13529
+1214,Portalegre,19536
+1215,Sousel,3850
+1301,Amarante,49892
+1302,Baião,16147
+1303,Felgueiras,51602
+1304,Gondomar,145757
+1305,Lousada,42669
+1306,Maia,117467
+1307,Marco de Canaveses,45547
+1308,Matosinhos,149862
+1309,Paços de Ferreira,49697
+1310,Paredes,75937
+1311,Penafiel,62322
+1312,Porto,202360
+1313,Póvoa de Varzim,60932
+1314,Santo Tirso,61973
+1315,Valongo,84877
+1316,Vila do Conde,72612
+1317,Vila Nova de Gaia,267768
+1318,Trofa,33936
+1401,Abrantes,30906
+1402,Alcanena,11406
+1403,Almeirim,19765
+1404,Alpiarça,6353
+1405,Benavente,25155
+1406,Cartaxo,20851
+1407,Chamusca,7516
+1408,Constância,3377
+1409,Coruche,15549
+1410,Entroncamento,16585
+1411,Ferreira do Zêzere,6898
+1412,Golegã,4721
+1413,Mação,5679
+1414,Rio Maior,17873
+1415,Salvaterra de Magos,19868
+1416,Santarém,50934
+1417,Sardoal,3140
+1418,Tomar,33222
+1419,Torres Novas,30808
+1420,Vila Nova da Barquinha,6447
+1421,Ourém,40362
+1501,Alcácer do Sal,9846
+1502,Alcochete,15620
+1503,Almada,150868
+1504,Barreiro,67786
+1505,Grândola,11709
+1506,Moita,59138
+1507,Montijo,44889
+1508,Palmela,59628
+1509,Santiago do Cacém,23896
+1510,Seixal,146474
+1511,Sesimbra,46548
+1512,Setúbal,106385
+1513,Sines,11939
+1601,Arcos de Valdevez,24095
+1602,Caminha,15850
+1603,Melgaço,9509
+1604,Monção,18612
+1605,Paredes de Coura,8413
+1606,Ponte da Barca,12838
+1607,Ponte de Lima,40477
+1608,Valença,12734
+1609,Viana do Castelo,81696
+1610,Vila Nova de Cerveira,8357
+1701,Alijó,10943
+1702,Boticas,7444
+1703,Chaves,42196
+1704,Mesão Frio,3358
+1705,Mondim de Basto,7411
+1706,Montalegre,12921
+1707,Murça,5982
+1708,Peso da Régua,14682
+1709,Ribeira de Pena,7979
+1710,Sabrosa,6072
+1711,Santa Marta de Penaguião,6883
+1712,Valpaços,18162
+1713,Vila Pouca de Aguiar,13545
+1714,Vila Real,49319
+1801,Armamar,5581
+1802,Carregal do Sal,8837
+1803,Castro Daire,13495
+1804,Cinfães,15789
+1805,Lamego,23044
+1806,Mangualde,17735
+1807,Moimenta da Beira,9862
+1808,Mortágua,8170
+1809,Nelas,12295
+1810,Oliveira de Frades,8559
+1811,Penalva do Castelo,7205
+1812,Penedono,2774
+1813,Resende,9638
+1814,Santa Comba Dão,10103
+1815,São João da Pesqueira,6405
+1816,São Pedro do Sul,14521
+1817,Sátão,12065
+1818,Sernancelhe,5024
+1819,Tabuaço,4566
+1820,Tarouca,7180
+1821,Tondela,24181
+1822,Vila Nova de Paiva,5672
+1823,Viseu,92594
+1824,Vouzela,8744
+3101,Calheta,12420
+3102,Câmara de Lobos,32879
+3103,Funchal,104824
+3104,Machico,19959
+3105,Ponta do Sol,9933
+3106,Porto Moniz,3012
+3107,Ribeira Brava,14183
+3108,Santa Cruz,40219
+3109,Santana,6890
+3110,São Vicente,5936
+3201,Porto Santo,5546
+4101,Vila do Porto,5171
+4201,Lagoa,13069
+4202,Nordeste,4838
+4203,Ponta Delgada,65463
+4204,Povoação,6243
+4205,Ribeira Grande,29137
+4206,Vila Franca do Campo,10484
+4301,Angra do Heroísmo,33395
+4302,Vila da Praia da Vitória,19777
+4401,Santa Cruz da Graciosa,3847
+4501,Calheta,3689
+4502,Velas,4985
+4601,Lajes do Pico,4442
+4602,Madalena,6030
+4603,São Roque do Pico,3308
+4701,Horta,12987
+4801,Lajes das Flores,1238
+4802,Santa Cruz das Flores,1823
+4901,Corvo,363

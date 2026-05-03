@@ -74,9 +74,10 @@ Place the four CAOP 2025 geopackages and the AR 2025 spreadsheets under
 ## Run
 
 ```bash
-python scripts/01_prepare_data.py
-python scripts/02_run_apportionment.py
-python scripts/03_validate_against_client.py
+python scripts/01_prepare_data.py            # ETL: gpkg + xlsx -> data_clean/
+python scripts/02_run_apportionment.py       # Hamilton + tier split only
+python scripts/03_validate_against_client.py # cross-check vs RESULTS_2025.xlsx
+python scripts/04_run_full_pipeline.py       # full pipeline incl. lower-tier
 ```
 
 Each script logs progress to stdout and writes outputs to disk. Module
@@ -84,8 +85,8 @@ functions are pure and importable from `src/` for use in notebooks.
 
 ## Validation status
 
-Against the client's `RESULTS_2025.xlsx` ground truth (run on
-2025 data, `tier_split_rounding=floor`):
+Apportionment-side validation against `RESULTS_2025.xlsx` ground truth
+(2025 data, `tier_split_rounding=floor`):
 
 | Metric | Pipeline | Client | Match |
 |---|---|---|---|
@@ -94,13 +95,50 @@ Against the client's `RESULTS_2025.xlsx` ground truth (run on
 | Mainland single-member | 70 | 70 | yes |
 | Island single-member | 4 | 4 | yes |
 | Districts with matching mandates | 17/19 | | partial |
-| Non-split districts (15 of 19) | exact match | | yes |
 
-The two non-matching districts are Lisboa 1 and Lisboa 3, where the
-algorithm chooses a different (more voter-balanced) split of the
-Lisboa distrito than the client's manual mapping. Total mandates are
-preserved (15 + 16 + 16 = 47 = client total). See
-`docs/design_notes.md` for the trade-off discussion.
+Two mandate mismatches (Lisboa 1 = 15 vs client 16; Lisboa 3 = 16 vs
+client 15) reflect the algorithm's voter-balanced sub-district choice
+versus the client's manual mapping. Total Lisboa mandates (47) are
+preserved. See `docs/design_notes.md` section 4.
+
+End-to-end pipeline produces:
+- 19 redesigned upper-tier districts
+- 74 lower-tier (single-member) districts
+- 152 party-list seats allocated by D'Hondt
+- 71/74 lower districts contiguous (3 island districts use virtual bridges)
+- 63/74 within 10% voter-deviation tolerance
+- 1 lower district has no recorded votes (data quality issue,
+  documented in diagnostics CSV)
+
+## Final output package
+
+After running all scripts, `outputs/` contains:
+
+```
+outputs/
+├── geojson/
+│   ├── upper_districts.geojson      # 19 polygons + voters + mandates
+│   └── lower_districts.geojson      # 74 polygons + winning_party + colour
+├── tables/
+│   ├── upper_district_membership.csv     # parish -> upper_district
+│   ├── upper_district_diagnostics.csv    # voters, mandates per district
+│   ├── hamilton_allocation.csv           # quota / floor / remainder / seats
+│   ├── tier_split.csv                    # P_i / U_i per district
+│   ├── upper_district_party_votes.csv    # vote totals per (district, party)
+│   ├── dhondt_results_by_district.csv    # party-list seat allocation
+│   ├── lower_district_membership.csv     # parish -> lower_district
+│   ├── lower_district_diagnostics.csv    # contiguity, deviation, notes
+│   ├── lower_district_party_votes.csv    # vote totals per (lower, party)
+│   ├── single_member_winners.csv         # winning_party per lower district
+│   ├── party_seat_breakdown.csv          # (district, party) seat detail
+│   └── final_party_seat_results.csv      # national totals per party
+├── json/
+│   └── final_party_seat_results.json     # parliament-chart-ready
+└── documentation/
+    ├── scenario_config.json              # snapshot of run config
+    └── data_dictionary.csv               # field definitions
+
+```
 
 ## Configuration
 

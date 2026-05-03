@@ -89,7 +89,7 @@
     "_skip_districts_note": "List redesigned upper-tier districts where lower-tier districting should be skipped (e.g. ['Madeira','Açores']) if islands prove unsuitable for single-member districting.",
 
     "tolerance": 0.10,
-    "max_iterations": 50000,
+    "max_iterations": 5000,
     "tie_break_rule": "smallest_population_first",
     "allow_repair": true
   },

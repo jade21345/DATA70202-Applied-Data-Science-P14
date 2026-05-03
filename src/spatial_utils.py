@@ -86,29 +86,47 @@ def build_adjacency_graph(
             )
             id_to_geom = dict(zip(ids, geoms))
             largest = max(components, key=len)
+            largest_list = list(largest)
+
+            # Use centroid-to-centroid Euclidean distance as the bridge
+            # criterion. The exact polygon-to-polygon distance would be
+            # the most precise measure but is dominated by the cost of
+            # Shapely's polygon distance computation on the large
+            # mainland geometries (tens of milliseconds each). Centroid
+            # distance is sufficient for picking which mainland parish
+            # the bridge should land on, since orphan components are
+            # separated from the mainland by hundreds of kilometres
+            # (Madeira ~1000 km, Azores ~1500 km) — the choice of which
+            # specific parish is virtual anyway.
+            from scipy.spatial import cKDTree
+
+            largest_centroids = np.array([
+                [id_to_geom[v].centroid.x, id_to_geom[v].centroid.y]
+                for v in largest_list
+            ])
+            kd = cKDTree(largest_centroids)
+
             for comp in components:
                 if comp is largest:
                     continue
-                # Find the closest pair (u in comp, v in largest).
-                best_u, best_v, best_d = None, None, float("inf")
-                for u in comp:
-                    gu = id_to_geom[u]
-                    # Limit comparison to a handful of candidates in the largest
-                    # component using the spatial index for efficiency.
-                    candidate_idx = tree.nearest(gu)
-                    # tree.nearest returns one index; broaden by querying a bbox.
-                    # For correctness keep it simple: iterate over the largest comp.
-                    # (3000 parishes; this loop runs at most ~10 times -> ~30k ops.)
-                    for v in largest:
-                        d = gu.distance(id_to_geom[v])
-                        if d < best_d:
-                            best_d, best_u, best_v = d, u, v
-                if best_u is not None:
-                    g.add_edge(best_u, best_v, virtual=True, distance=best_d)
-                    logger.debug(
-                        "Bridged component (size %d) to main via %s <-> %s (d=%.1f)",
-                        len(comp), best_u, best_v, best_d,
-                    )
+                comp_list = list(comp)
+                comp_centroids = np.array([
+                    [id_to_geom[u].centroid.x, id_to_geom[u].centroid.y]
+                    for u in comp_list
+                ])
+                # For each orphan parish, get nearest mainland centroid.
+                dists, idxs = kd.query(comp_centroids, k=1)
+                # Pick the orphan that is closest to anything mainland.
+                argmin = int(np.argmin(dists))
+                best_u = comp_list[argmin]
+                best_v = largest_list[int(idxs[argmin])]
+                best_d = float(dists[argmin])
+
+                g.add_edge(best_u, best_v, virtual=True, distance=best_d)
+                logger.debug(
+                    "Bridged component (size %d) to main via %s <-> %s (centroid d=%.0f m)",
+                    len(comp), best_u, best_v, best_d,
+                )
 
     return g
 

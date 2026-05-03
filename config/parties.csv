@@ -1,0 +1,22 @@
+party_id,display_name,short_name,color,notes
+PS,Partido Socialista,PS,#FF66B2,Centre-left main party
+PPD/PSD.CDS-PP,PSD/CDS coalition,PSD-CDS,#FF8C00,Right-of-centre coalition (most districts)
+PPD/PSD.CDS-PP.PPM,PSD/CDS/PPM coalition,PSD-CDS-PPM,#FFA500,Variant including PPM (some districts only)
+CH,Chega,CH,#1F5DA0,Right-wing populist
+IL,Iniciativa Liberal,IL,#00C0F0,Liberal
+L,Livre,L,#00A859,Green-left
+PCP-PEV,CDU (PCP-PEV),CDU,#CC0000,Communist + Greens coalition
+B.E.,Bloco de Esquerda,BE,#A20025,Left-wing
+PAN,Pessoas-Animais-Natureza,PAN,#0AAB6F,Animal-environment
+ADN,Alternativa Democrática Nacional,ADN,#3F51B5,
+JPP,Juntos Pelo Povo,JPP,#FFD700,Madeira regional
+PPM,Partido Popular Monárquico,PPM,#1F4E5F,
+PCTP/MRPP,PCTP/MRPP,MRPP,#8B0000,
+MPT,Partido da Terra,MPT,#388E3C,
+PTP,Partido Trabalhista Português,PTP,#E91E63,
+R.I.R.,Reagir Incluir Reciclar,RIR,#9C27B0,
+VP,Volt Portugal,VP,#5C2D91,Pan-European
+NC,Nós Cidadãos,NC,#607D8B,
+ND,Nova Direita,ND,#795548,
+PLS,Partido Liberal Social,PLS,#00BCD4,
+E,Ergue-te,E,#424242,

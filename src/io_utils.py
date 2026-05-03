@@ -140,31 +140,37 @@ def load_official_results(
     The official spreadsheet stores parties as columns; this function
     melts them into rows so downstream aggregation is uniform.
 
-    Parameters
-    ----------
-    xlsx_path : Path
-        Path to the official spreadsheet (e.g. AR_2025_Globais...xlsx).
-    sheet : str
-        Sheet name containing parish-level results. Defaults to the AR
-        2025 sheet name.
-    header_row : int
-        0-indexed row number containing column headers. The official
-        export has 3 header rows; the actual headers are on row index 3.
+    Column identification strategy: the AR exports interleave party
+    columns with several non-party columns (year, totals, percentages,
+    blanks, nulls, registered voters). Rather than maintain a brittle
+    list of party names, we identify *non-party* columns and treat
+    everything else as a party. Non-party columns are:
+      - exact-match metadata: 'codigo', 'nome do territorio', 'ano',
+        'inscritos', 'votantes', 'brancos', 'nulos', any column starting
+        with '% '
+      - 'total de ...' columns (totals of concelhos/freguesias/consulados)
     """
     logger.info("Loading official results from %s [%s]", xlsx_path, sheet)
     df = pd.read_excel(xlsx_path, sheet_name=sheet, header=header_row)
 
-    # Identify metadata columns (everything that is not a party).
-    # The standard metadata columns in the AR exports are:
-    META_COLS = {"código", "nome do território", "inscritos"}
-    # Some other metadata columns may exist (e.g. "votantes", "brancos",
-    # "nulos") but we only need party votes here.
-    NON_PARTY_COLS = META_COLS | {
-        "votantes", "brancos", "nulos", "% votantes",
-        "abstenção", "subscritos", "% subscritos",
+    META_EXACT = {
+        "código", "nome do território", "ano",
+        "inscritos", "votantes", "brancos", "nulos",
+        "subscritos", "abstenção",
     }
 
-    party_cols = [c for c in df.columns if c not in NON_PARTY_COLS]
+    def is_party_col(col: str) -> bool:
+        c = str(col).strip()
+        if c in META_EXACT:
+            return False
+        if c.startswith("% "):
+            return False
+        if c.startswith("total de "):
+            return False
+        return True
+
+    party_cols = [c for c in df.columns if is_party_col(c)]
+    logger.debug("Identified %d party columns: %s", len(party_cols), party_cols)
 
     long = df.melt(
         id_vars=["código", "nome do território", "inscritos"],
@@ -197,8 +203,8 @@ def load_official_results(
 
     long = long.reset_index(drop=True)
     logger.info(
-        "Loaded %d (parish, party) rows for %d parishes",
-        len(long), long["codigo"].nunique(),
+        "Loaded %d (parish, party) rows for %d parishes across %d parties",
+        len(long), long["codigo"].nunique(), long["party"].nunique(),
     )
     return long
 
