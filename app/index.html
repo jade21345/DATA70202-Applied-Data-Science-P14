@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <title>Electoral System Redesign</title>
     <link rel="stylesheet" href="style.css">
+    
+
 </head>
 <body>
 
-    <header>
-        <h1>Portuguese Electoral System Redesign</h1>
-        <p>Working together with Institute of Public Policy and University of Manchester</p>
-    </header>
-
     <nav class="navbar">
         <ul>
+            <li>Logo</li>
+            <li>Title Name</li>
             <li><a href="index.html">Home</a></li>
             <li><a href="past.html">Past Elections</a></li>
             <li><a href="about.html">About Us</a></li>
+            <li class="nav-right">
+    <button onclick="toggleLanguage()"><img src="images/icon_portugal.png" alt="EN"></button>
+</li>
         </ul>
     </nav>
 
+
+
+
+<header>
+        <h1 data-en="Portuguese Electoral System Redesign" 
+    data-pt="Redesign do Sistema Eleitoral Português">
+    Portuguese Electoral System Redesign
+</h1>
+        <p data-en="Team Project working together with Institute of Public Policy and University of Manchester"
+   data-pt="Projeto em colaboração com o Instituto de Políticas Públicas e a Universidade de Manchester">
+   Team Project working together with Institute of Public Policy and University of Manchester
+</p></header>
     <main>
         <section>
             <h2>About Our Project</h2>
@@ -38,7 +52,12 @@
         </section>
 
         <!-- <button onclick="showMessage()">Click to Learn More</button> -->
+
+        
+
     </main>
+
+
 
     <footer class="footer">
 
@@ -48,6 +67,8 @@
         <a href="past.html">Past Elections</a>
         <a> | </a>
         <a href="about.html">About Us</a>
+        <a> | </a>
+        <a href="credits.html">Credits</a>
     </div>
     <div> 
         <p>In collaboration with:</p>
@@ -55,16 +76,17 @@
     <div class="logo">
 
         <a href="https://www.ipp-jcs.org/en/home-page_en/" target="_blank">
-            <img src="logo_ipp.png" alt="Institue of Public Policy | Lisbon">
+            <img src="images/logo_ipp.png" alt="Institue of Public Policy | Lisbon">
         </a>
 
-        <a href="hhttps://www.manchester.ac.uk/" target="_blank">
-            <img src="logo_uom.png" alt="University of Manchester">
+        <a href="https://www.manchester.ac.uk/" target="_blank">
+            <img src="images/logo_uom.png" alt="University of Manchester">
         </a>
     </div>
 
 
 </footer>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
