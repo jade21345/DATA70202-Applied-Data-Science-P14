@@ -79,6 +79,7 @@ section {
     min-height: 500px;
     display: flex;
     align-items: center;
+    padding-bottom: 60px; 
     background: url('images/home_sao_bento_palace.png') center center / cover no-repeat;
   }
 
@@ -126,6 +127,53 @@ section {
   }
 
 
+
+
+
+    .services-bar {
+    display: flex;
+    
+    max-width: 640px;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 2rem 1rem;
+    margin-top: -150px;  
+    gap: 0;
+    position: relative;
+    z-index: 100;    
+    margin-left: auto;   
+    margin-right: auto;
+  }
+
+  .service-item {
+    flex: 1;
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0 1rem;
+    border-right: 1px solid #eee;
+    text-align: center;
+  }
+
+  .service-item:last-child {
+    border-right: none;
+  }
+
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    color: #c0392b;
+  }
+
+  .service-item span {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.85rem;
+    color: #333;
+    line-height: 1.3;
+  }
 
 
 
