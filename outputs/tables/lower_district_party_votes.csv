@@ -1,0 +1,1173 @@
+lower_district,parent_upper_district,party,votes
+Alentejo - SM 1,Alentejo,PS,22053
+Alentejo - SM 1,Alentejo,CH,20244
+Alentejo - SM 1,Alentejo,PPD/PSD.CDS-PP,19701
+Alentejo - SM 1,Alentejo,PCP-PEV,9196
+Alentejo - SM 1,Alentejo,IL,2344
+Alentejo - SM 1,Alentejo,L,2281
+Alentejo - SM 1,Alentejo,B.E.,1517
+Alentejo - SM 1,Alentejo,ADN,848
+Alentejo - SM 1,Alentejo,PAN,816
+Alentejo - SM 1,Alentejo,VP,138
+Alentejo - SM 1,Alentejo,R.I.R.,136
+Alentejo - SM 1,Alentejo,PCTP/MRPP,100
+Alentejo - SM 1,Alentejo,E,87
+Alentejo - SM 1,Alentejo,NC,74
+Alentejo - SM 1,Alentejo,PPM,60
+Alentejo - SM 1,Alentejo,ND,9
+Alentejo - SM 2,Alentejo,CH,21699
+Alentejo - SM 2,Alentejo,PS,20840
+Alentejo - SM 2,Alentejo,PPD/PSD.CDS-PP,19653
+Alentejo - SM 2,Alentejo,PCP-PEV,3963
+Alentejo - SM 2,Alentejo,IL,1456
+Alentejo - SM 2,Alentejo,L,1311
+Alentejo - SM 2,Alentejo,B.E.,954
+Alentejo - SM 2,Alentejo,ADN,822
+Alentejo - SM 2,Alentejo,PAN,487
+Alentejo - SM 2,Alentejo,PCTP/MRPP,246
+Alentejo - SM 2,Alentejo,R.I.R.,106
+Alentejo - SM 2,Alentejo,VP,87
+Alentejo - SM 2,Alentejo,PPM,70
+Alentejo - SM 2,Alentejo,E,64
+Alentejo - SM 2,Alentejo,NC,31
+Alentejo - SM 2,Alentejo,ND,3
+Alentejo - SM 3,Alentejo,CH,16804
+Alentejo - SM 3,Alentejo,PS,16384
+Alentejo - SM 3,Alentejo,PPD/PSD.CDS-PP,12581
+Alentejo - SM 3,Alentejo,PCP-PEV,8455
+Alentejo - SM 3,Alentejo,L,1237
+Alentejo - SM 3,Alentejo,IL,1161
+Alentejo - SM 3,Alentejo,B.E.,1114
+Alentejo - SM 3,Alentejo,ADN,645
+Alentejo - SM 3,Alentejo,PAN,516
+Alentejo - SM 3,Alentejo,PCTP/MRPP,372
+Alentejo - SM 3,Alentejo,R.I.R.,110
+Alentejo - SM 3,Alentejo,ND,85
+Alentejo - SM 3,Alentejo,VP,82
+Alentejo - SM 3,Alentejo,PPM,73
+Alentejo - SM 3,Alentejo,E,71
+Alentejo - SM 3,Alentejo,NC,1
+Aveiro - SM 1,Aveiro,PPD/PSD.CDS-PP,28770
+Aveiro - SM 1,Aveiro,PS,16975
+Aveiro - SM 1,Aveiro,CH,15101
+Aveiro - SM 1,Aveiro,IL,3993
+Aveiro - SM 1,Aveiro,L,2122
+Aveiro - SM 1,Aveiro,ADN,1161
+Aveiro - SM 1,Aveiro,B.E.,1135
+Aveiro - SM 1,Aveiro,PAN,827
+Aveiro - SM 1,Aveiro,PCP-PEV,798
+Aveiro - SM 1,Aveiro,PCTP/MRPP,177
+Aveiro - SM 1,Aveiro,R.I.R.,169
+Aveiro - SM 1,Aveiro,VP,115
+Aveiro - SM 1,Aveiro,E,108
+Aveiro - SM 1,Aveiro,ND,76
+Aveiro - SM 1,Aveiro,NC,43
+Aveiro - SM 1,Aveiro,PPM,41
+Aveiro - SM 2,Aveiro,PPD/PSD.CDS-PP,40911
+Aveiro - SM 2,Aveiro,PS,20990
+Aveiro - SM 2,Aveiro,CH,20946
+Aveiro - SM 2,Aveiro,IL,6504
+Aveiro - SM 2,Aveiro,L,3887
+Aveiro - SM 2,Aveiro,B.E.,1813
+Aveiro - SM 2,Aveiro,ADN,1694
+Aveiro - SM 2,Aveiro,PAN,1291
+Aveiro - SM 2,Aveiro,PCP-PEV,1230
+Aveiro - SM 2,Aveiro,PCTP/MRPP,224
+Aveiro - SM 2,Aveiro,R.I.R.,159
+Aveiro - SM 2,Aveiro,VP,157
+Aveiro - SM 2,Aveiro,E,119
+Aveiro - SM 2,Aveiro,ND,104
+Aveiro - SM 2,Aveiro,NC,77
+Aveiro - SM 2,Aveiro,PPM,62
+Aveiro - SM 3,Aveiro,PPD/PSD.CDS-PP,46827
+Aveiro - SM 3,Aveiro,PS,30885
+Aveiro - SM 3,Aveiro,CH,25195
+Aveiro - SM 3,Aveiro,IL,7517
+Aveiro - SM 3,Aveiro,L,4021
+Aveiro - SM 3,Aveiro,B.E.,2484
+Aveiro - SM 3,Aveiro,ADN,2006
+Aveiro - SM 3,Aveiro,PCP-PEV,1892
+Aveiro - SM 3,Aveiro,PAN,1839
+Aveiro - SM 3,Aveiro,PCTP/MRPP,379
+Aveiro - SM 3,Aveiro,R.I.R.,314
+Aveiro - SM 3,Aveiro,E,188
+Aveiro - SM 3,Aveiro,VP,177
+Aveiro - SM 3,Aveiro,ND,139
+Aveiro - SM 3,Aveiro,NC,95
+Aveiro - SM 3,Aveiro,PPM,95
+Aveiro - SM 4,Aveiro,PPD/PSD.CDS-PP,23323
+Aveiro - SM 4,Aveiro,PS,10995
+Aveiro - SM 4,Aveiro,CH,9668
+Aveiro - SM 4,Aveiro,IL,2333
+Aveiro - SM 4,Aveiro,L,1083
+Aveiro - SM 4,Aveiro,ADN,993
+Aveiro - SM 4,Aveiro,B.E.,664
+Aveiro - SM 4,Aveiro,PAN,518
+Aveiro - SM 4,Aveiro,PCP-PEV,335
+Aveiro - SM 4,Aveiro,R.I.R.,191
+Aveiro - SM 4,Aveiro,PCTP/MRPP,102
+Aveiro - SM 4,Aveiro,ND,74
+Aveiro - SM 4,Aveiro,PPM,67
+Aveiro - SM 4,Aveiro,E,56
+Aveiro - SM 4,Aveiro,VP,55
+Aveiro - SM 4,Aveiro,NC,39
+Aveiro - SM 5,Aveiro,PPD/PSD.CDS-PP,23786
+Aveiro - SM 5,Aveiro,CH,14850
+Aveiro - SM 5,Aveiro,PS,10165
+Aveiro - SM 5,Aveiro,IL,3097
+Aveiro - SM 5,Aveiro,L,1692
+Aveiro - SM 5,Aveiro,ADN,1120
+Aveiro - SM 5,Aveiro,B.E.,919
+Aveiro - SM 5,Aveiro,PCP-PEV,668
+Aveiro - SM 5,Aveiro,PAN,656
+Aveiro - SM 5,Aveiro,PCTP/MRPP,123
+Aveiro - SM 5,Aveiro,R.I.R.,100
+Aveiro - SM 5,Aveiro,VP,88
+Aveiro - SM 5,Aveiro,ND,79
+Aveiro - SM 5,Aveiro,E,57
+Aveiro - SM 5,Aveiro,NC,45
+Aveiro - SM 5,Aveiro,PPM,39
+Açores - SM 1,Açores,PPD/PSD.CDS-PP.PPM,18257
+Açores - SM 1,Açores,CH,15115
+Açores - SM 1,Açores,PS,11630
+Açores - SM 1,Açores,IL,2123
+Açores - SM 1,Açores,L,1476
+Açores - SM 1,Açores,B.E.,1191
+Açores - SM 1,Açores,PAN,890
+Açores - SM 1,Açores,ADN,843
+Açores - SM 1,Açores,PCP-PEV,455
+Açores - SM 1,Açores,JPP,181
+Açores - SM 1,Açores,MPT,81
+Açores - SM 1,Açores,E,73
+Açores - SM 1,Açores,R.I.R.,72
+Açores - SM 2,Açores,PPD/PSD.CDS-PP.PPM,18622
+Açores - SM 2,Açores,PS,12180
+Açores - SM 2,Açores,CH,7938
+Açores - SM 2,Açores,IL,1358
+Açores - SM 2,Açores,L,1058
+Açores - SM 2,Açores,B.E.,915
+Açores - SM 2,Açores,ADN,823
+Açores - SM 2,Açores,PCP-PEV,764
+Açores - SM 2,Açores,PAN,424
+Açores - SM 2,Açores,JPP,90
+Açores - SM 2,Açores,R.I.R.,68
+Açores - SM 2,Açores,E,46
+Açores - SM 2,Açores,MPT,32
+Beira Baixa - SM 1,Beira Baixa,PPD/PSD.CDS-PP,17949
+Beira Baixa - SM 1,Beira Baixa,PS,13332
+Beira Baixa - SM 1,Beira Baixa,CH,10973
+Beira Baixa - SM 1,Beira Baixa,ADN,1085
+Beira Baixa - SM 1,Beira Baixa,IL,1010
+Beira Baixa - SM 1,Beira Baixa,PCP-PEV,907
+Beira Baixa - SM 1,Beira Baixa,L,717
+Beira Baixa - SM 1,Beira Baixa,B.E.,595
+Beira Baixa - SM 1,Beira Baixa,PAN,375
+Beira Baixa - SM 1,Beira Baixa,PPM,115
+Beira Baixa - SM 1,Beira Baixa,R.I.R.,98
+Beira Baixa - SM 1,Beira Baixa,VP,90
+Beira Baixa - SM 1,Beira Baixa,PCTP/MRPP,66
+Beira Baixa - SM 1,Beira Baixa,E,61
+Beira Baixa - SM 1,Beira Baixa,NC,58
+Beira Baixa - SM 2,Beira Baixa,PPD/PSD.CDS-PP,27253
+Beira Baixa - SM 2,Beira Baixa,PS,23819
+Beira Baixa - SM 2,Beira Baixa,CH,16352
+Beira Baixa - SM 2,Beira Baixa,IL,2293
+Beira Baixa - SM 2,Beira Baixa,L,1841
+Beira Baixa - SM 2,Beira Baixa,PCP-PEV,1451
+Beira Baixa - SM 2,Beira Baixa,ADN,1340
+Beira Baixa - SM 2,Beira Baixa,B.E.,1315
+Beira Baixa - SM 2,Beira Baixa,PAN,692
+Beira Baixa - SM 2,Beira Baixa,R.I.R.,130
+Beira Baixa - SM 2,Beira Baixa,VP,118
+Beira Baixa - SM 2,Beira Baixa,PCTP/MRPP,105
+Beira Baixa - SM 2,Beira Baixa,PPM,101
+Beira Baixa - SM 2,Beira Baixa,E,78
+Beira Baixa - SM 2,Beira Baixa,NC,59
+Beira Baixa - SM 3,Beira Baixa,PPD/PSD.CDS-PP,20705
+Beira Baixa - SM 3,Beira Baixa,CH,14235
+Beira Baixa - SM 3,Beira Baixa,PS,14150
+Beira Baixa - SM 3,Beira Baixa,IL,1834
+Beira Baixa - SM 3,Beira Baixa,L,1323
+Beira Baixa - SM 3,Beira Baixa,ADN,1107
+Beira Baixa - SM 3,Beira Baixa,PCP-PEV,906
+Beira Baixa - SM 3,Beira Baixa,B.E.,815
+Beira Baixa - SM 3,Beira Baixa,PAN,484
+Beira Baixa - SM 3,Beira Baixa,PCTP/MRPP,129
+Beira Baixa - SM 3,Beira Baixa,PPM,108
+Beira Baixa - SM 3,Beira Baixa,VP,108
+Beira Baixa - SM 3,Beira Baixa,R.I.R.,105
+Beira Baixa - SM 3,Beira Baixa,E,86
+Beira Baixa - SM 3,Beira Baixa,NC,0
+Braga - SM 1,Braga,PPD/PSD.CDS-PP,18730
+Braga - SM 1,Braga,CH,11074
+Braga - SM 1,Braga,PS,10037
+Braga - SM 1,Braga,IL,2913
+Braga - SM 1,Braga,L,1070
+Braga - SM 1,Braga,B.E.,610
+Braga - SM 1,Braga,PCP-PEV,541
+Braga - SM 1,Braga,ADN,535
+Braga - SM 1,Braga,PAN,390
+Braga - SM 1,Braga,R.I.R.,101
+Braga - SM 1,Braga,ND,76
+Braga - SM 1,Braga,VP,53
+Braga - SM 1,Braga,E,46
+Braga - SM 1,Braga,JPP,36
+Braga - SM 1,Braga,PPM,36
+Braga - SM 2,Braga,PPD/PSD.CDS-PP,34960
+Braga - SM 2,Braga,PS,20864
+Braga - SM 2,Braga,CH,20379
+Braga - SM 2,Braga,IL,4236
+Braga - SM 2,Braga,L,1820
+Braga - SM 2,Braga,B.E.,1214
+Braga - SM 2,Braga,PCP-PEV,1044
+Braga - SM 2,Braga,ADN,944
+Braga - SM 2,Braga,PAN,688
+Braga - SM 2,Braga,R.I.R.,201
+Braga - SM 2,Braga,ND,180
+Braga - SM 2,Braga,VP,87
+Braga - SM 2,Braga,E,58
+Braga - SM 2,Braga,JPP,49
+Braga - SM 2,Braga,PPM,44
+Braga - SM 3,Braga,PPD/PSD.CDS-PP,26582
+Braga - SM 3,Braga,CH,13805
+Braga - SM 3,Braga,PS,8876
+Braga - SM 3,Braga,IL,3265
+Braga - SM 3,Braga,L,1333
+Braga - SM 3,Braga,ADN,715
+Braga - SM 3,Braga,B.E.,705
+Braga - SM 3,Braga,PCP-PEV,564
+Braga - SM 3,Braga,PAN,424
+Braga - SM 3,Braga,R.I.R.,130
+Braga - SM 3,Braga,ND,89
+Braga - SM 3,Braga,VP,72
+Braga - SM 3,Braga,E,60
+Braga - SM 3,Braga,PPM,34
+Braga - SM 3,Braga,JPP,25
+Braga - SM 4,Braga,PPD/PSD.CDS-PP,31070
+Braga - SM 4,Braga,CH,20519
+Braga - SM 4,Braga,PS,20360
+Braga - SM 4,Braga,IL,7472
+Braga - SM 4,Braga,L,3556
+Braga - SM 4,Braga,B.E.,2114
+Braga - SM 4,Braga,PCP-PEV,1754
+Braga - SM 4,Braga,PAN,986
+Braga - SM 4,Braga,ADN,782
+Braga - SM 4,Braga,R.I.R.,175
+Braga - SM 4,Braga,ND,165
+Braga - SM 4,Braga,VP,138
+Braga - SM 4,Braga,E,96
+Braga - SM 4,Braga,JPP,61
+Braga - SM 4,Braga,PPM,51
+Braga - SM 5,Braga,PPD/PSD.CDS-PP,37378
+Braga - SM 5,Braga,PS,31394
+Braga - SM 5,Braga,CH,24202
+Braga - SM 5,Braga,IL,7706
+Braga - SM 5,Braga,L,3440
+Braga - SM 5,Braga,PCP-PEV,2234
+Braga - SM 5,Braga,B.E.,2148
+Braga - SM 5,Braga,PAN,1212
+Braga - SM 5,Braga,ADN,1076
+Braga - SM 5,Braga,R.I.R.,223
+Braga - SM 5,Braga,ND,161
+Braga - SM 5,Braga,VP,138
+Braga - SM 5,Braga,E,116
+Braga - SM 5,Braga,JPP,57
+Braga - SM 5,Braga,PPM,50
+Braga - SM 6,Braga,PPD/PSD.CDS-PP,44109
+Braga - SM 6,Braga,PS,32251
+Braga - SM 6,Braga,CH,27269
+Braga - SM 6,Braga,IL,10564
+Braga - SM 6,Braga,L,5183
+Braga - SM 6,Braga,B.E.,3096
+Braga - SM 6,Braga,PCP-PEV,2971
+Braga - SM 6,Braga,PAN,1413
+Braga - SM 6,Braga,ADN,1136
+Braga - SM 6,Braga,R.I.R.,233
+Braga - SM 6,Braga,ND,196
+Braga - SM 6,Braga,VP,195
+Braga - SM 6,Braga,E,139
+Braga - SM 6,Braga,JPP,70
+Braga - SM 6,Braga,PPM,56
+Coimbra - SM 1,Coimbra,PPD/PSD.CDS-PP,34909
+Coimbra - SM 1,Coimbra,PS,27807
+Coimbra - SM 1,Coimbra,CH,14813
+Coimbra - SM 1,Coimbra,IL,4626
+Coimbra - SM 1,Coimbra,L,4575
+Coimbra - SM 1,Coimbra,PCP-PEV,2882
+Coimbra - SM 1,Coimbra,B.E.,2300
+Coimbra - SM 1,Coimbra,ADN,1371
+Coimbra - SM 1,Coimbra,PAN,1258
+Coimbra - SM 1,Coimbra,VP,199
+Coimbra - SM 1,Coimbra,R.I.R.,151
+Coimbra - SM 1,Coimbra,E,124
+Coimbra - SM 1,Coimbra,PPM,95
+Coimbra - SM 1,Coimbra,ND,88
+Coimbra - SM 1,Coimbra,JPP,54
+Coimbra - SM 2,Coimbra,PPD/PSD.CDS-PP,24765
+Coimbra - SM 2,Coimbra,PS,17331
+Coimbra - SM 2,Coimbra,CH,16259
+Coimbra - SM 2,Coimbra,IL,3062
+Coimbra - SM 2,Coimbra,L,2429
+Coimbra - SM 2,Coimbra,PCP-PEV,1410
+Coimbra - SM 2,Coimbra,ADN,1379
+Coimbra - SM 2,Coimbra,B.E.,1358
+Coimbra - SM 2,Coimbra,PAN,865
+Coimbra - SM 2,Coimbra,R.I.R.,176
+Coimbra - SM 2,Coimbra,E,143
+Coimbra - SM 2,Coimbra,VP,107
+Coimbra - SM 2,Coimbra,ND,90
+Coimbra - SM 2,Coimbra,PPM,89
+Coimbra - SM 2,Coimbra,JPP,60
+Coimbra - SM 3,Coimbra,PPD/PSD.CDS-PP,19850
+Coimbra - SM 3,Coimbra,PS,18210
+Coimbra - SM 3,Coimbra,CH,11455
+Coimbra - SM 3,Coimbra,IL,2585
+Coimbra - SM 3,Coimbra,L,2388
+Coimbra - SM 3,Coimbra,PCP-PEV,1504
+Coimbra - SM 3,Coimbra,B.E.,1369
+Coimbra - SM 3,Coimbra,ADN,1002
+Coimbra - SM 3,Coimbra,PAN,705
+Coimbra - SM 3,Coimbra,R.I.R.,147
+Coimbra - SM 3,Coimbra,VP,94
+Coimbra - SM 3,Coimbra,E,73
+Coimbra - SM 3,Coimbra,ND,67
+Coimbra - SM 3,Coimbra,PPM,51
+Coimbra - SM 3,Coimbra,JPP,40
+Faro - SM 1,Faro,CH,25874
+Faro - SM 1,Faro,PPD/PSD.CDS-PP,17821
+Faro - SM 1,Faro,PS,15369
+Faro - SM 1,Faro,IL,3296
+Faro - SM 1,Faro,L,2563
+Faro - SM 1,Faro,PCP-PEV,2381
+Faro - SM 1,Faro,B.E.,1892
+Faro - SM 1,Faro,ADN,1365
+Faro - SM 1,Faro,PAN,1331
+Faro - SM 1,Faro,R.I.R.,177
+Faro - SM 1,Faro,E,160
+Faro - SM 1,Faro,ND,148
+Faro - SM 1,Faro,VP,136
+Faro - SM 1,Faro,PPM,115
+Faro - SM 1,Faro,JPP,95
+Faro - SM 2,Faro,CH,24070
+Faro - SM 2,Faro,PPD/PSD.CDS-PP,17234
+Faro - SM 2,Faro,PS,12375
+Faro - SM 2,Faro,IL,2567
+Faro - SM 2,Faro,L,1726
+Faro - SM 2,Faro,PCP-PEV,1578
+Faro - SM 2,Faro,B.E.,1425
+Faro - SM 2,Faro,ADN,1235
+Faro - SM 2,Faro,PAN,1075
+Faro - SM 2,Faro,E,140
+Faro - SM 2,Faro,VP,130
+Faro - SM 2,Faro,ND,129
+Faro - SM 2,Faro,R.I.R.,128
+Faro - SM 2,Faro,PPM,96
+Faro - SM 2,Faro,JPP,61
+Faro - SM 3,Faro,CH,28224
+Faro - SM 3,Faro,PPD/PSD.CDS-PP,24298
+Faro - SM 3,Faro,PS,19549
+Faro - SM 3,Faro,IL,4184
+Faro - SM 3,Faro,L,3446
+Faro - SM 3,Faro,B.E.,2407
+Faro - SM 3,Faro,PCP-PEV,2211
+Faro - SM 3,Faro,PAN,1755
+Faro - SM 3,Faro,ADN,1582
+Faro - SM 3,Faro,R.I.R.,207
+Faro - SM 3,Faro,E,186
+Faro - SM 3,Faro,VP,171
+Faro - SM 3,Faro,ND,146
+Faro - SM 3,Faro,PPM,121
+Faro - SM 3,Faro,JPP,106
+Leiria - SM 1,Leiria,PPD/PSD.CDS-PP,31234
+Leiria - SM 1,Leiria,CH,21750
+Leiria - SM 1,Leiria,PS,19676
+Leiria - SM 1,Leiria,IL,6467
+Leiria - SM 1,Leiria,L,3887
+Leiria - SM 1,Leiria,PCP-PEV,2729
+Leiria - SM 1,Leiria,B.E.,2218
+Leiria - SM 1,Leiria,ADN,1755
+Leiria - SM 1,Leiria,PAN,1220
+Leiria - SM 1,Leiria,ND,221
+Leiria - SM 1,Leiria,R.I.R.,190
+Leiria - SM 1,Leiria,VP,182
+Leiria - SM 1,Leiria,E,127
+Leiria - SM 1,Leiria,PPM,100
+Leiria - SM 2,Leiria,PPD/PSD.CDS-PP,30215
+Leiria - SM 2,Leiria,CH,21289
+Leiria - SM 2,Leiria,PS,17425
+Leiria - SM 2,Leiria,IL,4979
+Leiria - SM 2,Leiria,L,3198
+Leiria - SM 2,Leiria,PCP-PEV,1975
+Leiria - SM 2,Leiria,ADN,1710
+Leiria - SM 2,Leiria,B.E.,1674
+Leiria - SM 2,Leiria,PAN,1129
+Leiria - SM 2,Leiria,R.I.R.,209
+Leiria - SM 2,Leiria,ND,205
+Leiria - SM 2,Leiria,VP,177
+Leiria - SM 2,Leiria,E,150
+Leiria - SM 2,Leiria,PPM,105
+Leiria - SM 3,Leiria,PPD/PSD.CDS-PP,36794
+Leiria - SM 3,Leiria,CH,18123
+Leiria - SM 3,Leiria,PS,13220
+Leiria - SM 3,Leiria,IL,4525
+Leiria - SM 3,Leiria,ADN,2280
+Leiria - SM 3,Leiria,L,2214
+Leiria - SM 3,Leiria,B.E.,1207
+Leiria - SM 3,Leiria,PCP-PEV,764
+Leiria - SM 3,Leiria,PAN,754
+Leiria - SM 3,Leiria,ND,297
+Leiria - SM 3,Leiria,R.I.R.,188
+Leiria - SM 3,Leiria,VP,128
+Leiria - SM 3,Leiria,E,121
+Leiria - SM 3,Leiria,PPM,118
+Lisboa 1 - SM 1,Lisboa 1,PPD/PSD.CDS-PP,20739
+Lisboa 1 - SM 1,Lisboa 1,CH,11334
+Lisboa 1 - SM 1,Lisboa 1,PS,9902
+Lisboa 1 - SM 1,Lisboa 1,IL,5152
+Lisboa 1 - SM 1,Lisboa 1,L,2879
+Lisboa 1 - SM 1,Lisboa 1,PCP-PEV,1116
+Lisboa 1 - SM 1,Lisboa 1,B.E.,972
+Lisboa 1 - SM 1,Lisboa 1,PAN,925
+Lisboa 1 - SM 1,Lisboa 1,ADN,802
+Lisboa 1 - SM 1,Lisboa 1,PCTP/MRPP,120
+Lisboa 1 - SM 1,Lisboa 1,VP,110
+Lisboa 1 - SM 1,Lisboa 1,E,102
+Lisboa 1 - SM 1,Lisboa 1,PLS,88
+Lisboa 1 - SM 1,Lisboa 1,R.I.R.,85
+Lisboa 1 - SM 1,Lisboa 1,ND,80
+Lisboa 1 - SM 1,Lisboa 1,PPM,51
+Lisboa 1 - SM 1,Lisboa 1,NC,29
+Lisboa 1 - SM 1,Lisboa 1,JPP,25
+Lisboa 1 - SM 2,Lisboa 1,PPD/PSD.CDS-PP,21195
+Lisboa 1 - SM 2,Lisboa 1,PS,20994
+Lisboa 1 - SM 2,Lisboa 1,CH,20084
+Lisboa 1 - SM 2,Lisboa 1,IL,5626
+Lisboa 1 - SM 2,Lisboa 1,L,4730
+Lisboa 1 - SM 2,Lisboa 1,PCP-PEV,2530
+Lisboa 1 - SM 2,Lisboa 1,B.E.,1656
+Lisboa 1 - SM 2,Lisboa 1,PAN,1523
+Lisboa 1 - SM 2,Lisboa 1,ADN,1055
+Lisboa 1 - SM 2,Lisboa 1,PCTP/MRPP,212
+Lisboa 1 - SM 2,Lisboa 1,VP,202
+Lisboa 1 - SM 2,Lisboa 1,ND,157
+Lisboa 1 - SM 2,Lisboa 1,R.I.R.,144
+Lisboa 1 - SM 2,Lisboa 1,E,128
+Lisboa 1 - SM 2,Lisboa 1,PLS,113
+Lisboa 1 - SM 2,Lisboa 1,PPM,56
+Lisboa 1 - SM 2,Lisboa 1,JPP,52
+Lisboa 1 - SM 2,Lisboa 1,NC,41
+Lisboa 1 - SM 3,Lisboa 1,PPD/PSD.CDS-PP,23759
+Lisboa 1 - SM 3,Lisboa 1,PS,17809
+Lisboa 1 - SM 3,Lisboa 1,CH,10697
+Lisboa 1 - SM 3,Lisboa 1,IL,6947
+Lisboa 1 - SM 3,Lisboa 1,L,5963
+Lisboa 1 - SM 3,Lisboa 1,PCP-PEV,2492
+Lisboa 1 - SM 3,Lisboa 1,B.E.,1647
+Lisboa 1 - SM 3,Lisboa 1,PAN,1394
+Lisboa 1 - SM 3,Lisboa 1,ADN,762
+Lisboa 1 - SM 3,Lisboa 1,VP,199
+Lisboa 1 - SM 3,Lisboa 1,PCTP/MRPP,152
+Lisboa 1 - SM 3,Lisboa 1,ND,115
+Lisboa 1 - SM 3,Lisboa 1,PLS,110
+Lisboa 1 - SM 3,Lisboa 1,E,99
+Lisboa 1 - SM 3,Lisboa 1,R.I.R.,82
+Lisboa 1 - SM 3,Lisboa 1,PPM,48
+Lisboa 1 - SM 3,Lisboa 1,JPP,42
+Lisboa 1 - SM 3,Lisboa 1,NC,39
+Lisboa 1 - SM 4,Lisboa 1,PPD/PSD.CDS-PP,33695
+Lisboa 1 - SM 4,Lisboa 1,PS,23480
+Lisboa 1 - SM 4,Lisboa 1,CH,16956
+Lisboa 1 - SM 4,Lisboa 1,IL,9379
+Lisboa 1 - SM 4,Lisboa 1,L,8029
+Lisboa 1 - SM 4,Lisboa 1,PCP-PEV,2939
+Lisboa 1 - SM 4,Lisboa 1,B.E.,2367
+Lisboa 1 - SM 4,Lisboa 1,PAN,2300
+Lisboa 1 - SM 4,Lisboa 1,ADN,1261
+Lisboa 1 - SM 4,Lisboa 1,PCTP/MRPP,272
+Lisboa 1 - SM 4,Lisboa 1,VP,271
+Lisboa 1 - SM 4,Lisboa 1,PLS,165
+Lisboa 1 - SM 4,Lisboa 1,E,154
+Lisboa 1 - SM 4,Lisboa 1,R.I.R.,147
+Lisboa 1 - SM 4,Lisboa 1,ND,120
+Lisboa 1 - SM 4,Lisboa 1,PPM,82
+Lisboa 1 - SM 4,Lisboa 1,JPP,56
+Lisboa 1 - SM 4,Lisboa 1,NC,56
+Lisboa 1 - SM 5,Lisboa 1,PS,21792
+Lisboa 1 - SM 5,Lisboa 1,PPD/PSD.CDS-PP,17812
+Lisboa 1 - SM 5,Lisboa 1,CH,16183
+Lisboa 1 - SM 5,Lisboa 1,L,4625
+Lisboa 1 - SM 5,Lisboa 1,IL,4471
+Lisboa 1 - SM 5,Lisboa 1,PCP-PEV,2984
+Lisboa 1 - SM 5,Lisboa 1,B.E.,2009
+Lisboa 1 - SM 5,Lisboa 1,PAN,1403
+Lisboa 1 - SM 5,Lisboa 1,ADN,901
+Lisboa 1 - SM 5,Lisboa 1,PCTP/MRPP,252
+Lisboa 1 - SM 5,Lisboa 1,VP,175
+Lisboa 1 - SM 5,Lisboa 1,ND,140
+Lisboa 1 - SM 5,Lisboa 1,E,123
+Lisboa 1 - SM 5,Lisboa 1,PLS,107
+Lisboa 1 - SM 5,Lisboa 1,R.I.R.,99
+Lisboa 1 - SM 5,Lisboa 1,PPM,80
+Lisboa 1 - SM 5,Lisboa 1,JPP,65
+Lisboa 1 - SM 5,Lisboa 1,NC,60
+Lisboa 2 - SM 1,Lisboa 2,CH,37471
+Lisboa 2 - SM 1,Lisboa 2,PPD/PSD.CDS-PP,33446
+Lisboa 2 - SM 1,Lisboa 2,PS,33407
+Lisboa 2 - SM 1,Lisboa 2,IL,7869
+Lisboa 2 - SM 1,Lisboa 2,L,7295
+Lisboa 2 - SM 1,Lisboa 2,PCP-PEV,6715
+Lisboa 2 - SM 1,Lisboa 2,B.E.,3070
+Lisboa 2 - SM 1,Lisboa 2,PAN,2284
+Lisboa 2 - SM 1,Lisboa 2,ADN,1983
+Lisboa 2 - SM 1,Lisboa 2,PCTP/MRPP,536
+Lisboa 2 - SM 1,Lisboa 2,R.I.R.,363
+Lisboa 2 - SM 1,Lisboa 2,VP,295
+Lisboa 2 - SM 1,Lisboa 2,E,243
+Lisboa 2 - SM 1,Lisboa 2,PLS,224
+Lisboa 2 - SM 1,Lisboa 2,ND,199
+Lisboa 2 - SM 1,Lisboa 2,PPM,101
+Lisboa 2 - SM 1,Lisboa 2,JPP,97
+Lisboa 2 - SM 1,Lisboa 2,NC,77
+Lisboa 2 - SM 2,Lisboa 2,PPD/PSD.CDS-PP,26412
+Lisboa 2 - SM 2,Lisboa 2,PS,19596
+Lisboa 2 - SM 2,Lisboa 2,CH,10329
+Lisboa 2 - SM 2,Lisboa 2,L,8892
+Lisboa 2 - SM 2,Lisboa 2,IL,7538
+Lisboa 2 - SM 2,Lisboa 2,PCP-PEV,3437
+Lisboa 2 - SM 2,Lisboa 2,B.E.,2696
+Lisboa 2 - SM 2,Lisboa 2,PAN,1474
+Lisboa 2 - SM 2,Lisboa 2,ADN,731
+Lisboa 2 - SM 2,Lisboa 2,VP,220
+Lisboa 2 - SM 2,Lisboa 2,PCTP/MRPP,212
+Lisboa 2 - SM 2,Lisboa 2,E,151
+Lisboa 2 - SM 2,Lisboa 2,PLS,103
+Lisboa 2 - SM 2,Lisboa 2,ND,84
+Lisboa 2 - SM 2,Lisboa 2,PPM,82
+Lisboa 2 - SM 2,Lisboa 2,R.I.R.,69
+Lisboa 2 - SM 2,Lisboa 2,JPP,38
+Lisboa 2 - SM 2,Lisboa 2,NC,36
+Lisboa 2 - SM 3,Lisboa 2,PPD/PSD.CDS-PP,33736
+Lisboa 2 - SM 3,Lisboa 2,PS,24106
+Lisboa 2 - SM 3,Lisboa 2,CH,15352
+Lisboa 2 - SM 3,Lisboa 2,IL,9950
+Lisboa 2 - SM 3,Lisboa 2,L,8612
+Lisboa 2 - SM 3,Lisboa 2,PCP-PEV,3287
+Lisboa 2 - SM 3,Lisboa 2,B.E.,2123
+Lisboa 2 - SM 3,Lisboa 2,PAN,1630
+Lisboa 2 - SM 3,Lisboa 2,ADN,904
+Lisboa 2 - SM 3,Lisboa 2,VP,344
+Lisboa 2 - SM 3,Lisboa 2,PCTP/MRPP,221
+Lisboa 2 - SM 3,Lisboa 2,E,160
+Lisboa 2 - SM 3,Lisboa 2,R.I.R.,141
+Lisboa 2 - SM 3,Lisboa 2,PLS,134
+Lisboa 2 - SM 3,Lisboa 2,ND,120
+Lisboa 2 - SM 3,Lisboa 2,PPM,54
+Lisboa 2 - SM 3,Lisboa 2,JPP,52
+Lisboa 2 - SM 3,Lisboa 2,NC,49
+Lisboa 2 - SM 4,Lisboa 2,PPD/PSD.CDS-PP,6049
+Lisboa 2 - SM 4,Lisboa 2,PS,4243
+Lisboa 2 - SM 4,Lisboa 2,CH,2424
+Lisboa 2 - SM 4,Lisboa 2,IL,1817
+Lisboa 2 - SM 4,Lisboa 2,L,1461
+Lisboa 2 - SM 4,Lisboa 2,PCP-PEV,714
+Lisboa 2 - SM 4,Lisboa 2,B.E.,388
+Lisboa 2 - SM 4,Lisboa 2,PAN,294
+Lisboa 2 - SM 4,Lisboa 2,ADN,167
+Lisboa 2 - SM 4,Lisboa 2,VP,49
+Lisboa 2 - SM 4,Lisboa 2,PCTP/MRPP,40
+Lisboa 2 - SM 4,Lisboa 2,E,28
+Lisboa 2 - SM 4,Lisboa 2,PLS,25
+Lisboa 2 - SM 4,Lisboa 2,ND,18
+Lisboa 2 - SM 4,Lisboa 2,R.I.R.,14
+Lisboa 2 - SM 4,Lisboa 2,PPM,13
+Lisboa 2 - SM 4,Lisboa 2,JPP,9
+Lisboa 2 - SM 4,Lisboa 2,NC,8
+Lisboa 2 - SM 5,Lisboa 2,PPD/PSD.CDS-PP,33444
+Lisboa 2 - SM 5,Lisboa 2,PS,25421
+Lisboa 2 - SM 5,Lisboa 2,CH,17635
+Lisboa 2 - SM 5,Lisboa 2,L,10640
+Lisboa 2 - SM 5,Lisboa 2,IL,9883
+Lisboa 2 - SM 5,Lisboa 2,PCP-PEV,4114
+Lisboa 2 - SM 5,Lisboa 2,B.E.,3267
+Lisboa 2 - SM 5,Lisboa 2,PAN,1902
+Lisboa 2 - SM 5,Lisboa 2,ADN,1006
+Lisboa 2 - SM 5,Lisboa 2,VP,330
+Lisboa 2 - SM 5,Lisboa 2,PCTP/MRPP,307
+Lisboa 2 - SM 5,Lisboa 2,E,206
+Lisboa 2 - SM 5,Lisboa 2,PLS,150
+Lisboa 2 - SM 5,Lisboa 2,ND,132
+Lisboa 2 - SM 5,Lisboa 2,R.I.R.,129
+Lisboa 2 - SM 5,Lisboa 2,PPM,74
+Lisboa 2 - SM 5,Lisboa 2,NC,58
+Lisboa 2 - SM 5,Lisboa 2,JPP,47
+Lisboa 3 - SM 1,Lisboa 3,PPD/PSD.CDS-PP,7049
+Lisboa 3 - SM 1,Lisboa 3,CH,4591
+Lisboa 3 - SM 1,Lisboa 3,PS,4257
+Lisboa 3 - SM 1,Lisboa 3,IL,1846
+Lisboa 3 - SM 1,Lisboa 3,L,1483
+Lisboa 3 - SM 1,Lisboa 3,PCP-PEV,661
+Lisboa 3 - SM 1,Lisboa 3,B.E.,481
+Lisboa 3 - SM 1,Lisboa 3,PAN,426
+Lisboa 3 - SM 1,Lisboa 3,ADN,312
+Lisboa 3 - SM 1,Lisboa 3,E,58
+Lisboa 3 - SM 1,Lisboa 3,PCTP/MRPP,51
+Lisboa 3 - SM 1,Lisboa 3,ND,41
+Lisboa 3 - SM 1,Lisboa 3,PLS,40
+Lisboa 3 - SM 1,Lisboa 3,VP,40
+Lisboa 3 - SM 1,Lisboa 3,R.I.R.,35
+Lisboa 3 - SM 1,Lisboa 3,PPM,20
+Lisboa 3 - SM 1,Lisboa 3,JPP,14
+Lisboa 3 - SM 1,Lisboa 3,NC,11
+Lisboa 3 - SM 2,Lisboa 3,PPD/PSD.CDS-PP,26521
+Lisboa 3 - SM 2,Lisboa 3,CH,19930
+Lisboa 3 - SM 2,Lisboa 3,PS,16854
+Lisboa 3 - SM 2,Lisboa 3,IL,5895
+Lisboa 3 - SM 2,Lisboa 3,L,4442
+Lisboa 3 - SM 2,Lisboa 3,PCP-PEV,2240
+Lisboa 3 - SM 2,Lisboa 3,B.E.,1676
+Lisboa 3 - SM 2,Lisboa 3,PAN,1394
+Lisboa 3 - SM 2,Lisboa 3,ADN,1327
+Lisboa 3 - SM 2,Lisboa 3,PCTP/MRPP,242
+Lisboa 3 - SM 2,Lisboa 3,R.I.R.,234
+Lisboa 3 - SM 2,Lisboa 3,VP,202
+Lisboa 3 - SM 2,Lisboa 3,E,139
+Lisboa 3 - SM 2,Lisboa 3,PLS,126
+Lisboa 3 - SM 2,Lisboa 3,ND,118
+Lisboa 3 - SM 2,Lisboa 3,JPP,78
+Lisboa 3 - SM 2,Lisboa 3,NC,62
+Lisboa 3 - SM 2,Lisboa 3,PPM,59
+Lisboa 3 - SM 3,Lisboa 3,CH,48277
+Lisboa 3 - SM 3,Lisboa 3,PS,44040
+Lisboa 3 - SM 3,Lisboa 3,PPD/PSD.CDS-PP,43204
+Lisboa 3 - SM 3,Lisboa 3,IL,11299
+Lisboa 3 - SM 3,Lisboa 3,L,10661
+Lisboa 3 - SM 3,Lisboa 3,PCP-PEV,5715
+Lisboa 3 - SM 3,Lisboa 3,B.E.,4563
+Lisboa 3 - SM 3,Lisboa 3,PAN,3841
+Lisboa 3 - SM 3,Lisboa 3,ADN,2354
+Lisboa 3 - SM 3,Lisboa 3,PCTP/MRPP,506
+Lisboa 3 - SM 3,Lisboa 3,ND,443
+Lisboa 3 - SM 3,Lisboa 3,VP,417
+Lisboa 3 - SM 3,Lisboa 3,R.I.R.,382
+Lisboa 3 - SM 3,Lisboa 3,E,325
+Lisboa 3 - SM 3,Lisboa 3,PLS,293
+Lisboa 3 - SM 3,Lisboa 3,JPP,139
+Lisboa 3 - SM 3,Lisboa 3,NC,139
+Lisboa 3 - SM 3,Lisboa 3,PPM,128
+Lisboa 3 - SM 4,Lisboa 3,PS,24856
+Lisboa 3 - SM 4,Lisboa 3,CH,22090
+Lisboa 3 - SM 4,Lisboa 3,PPD/PSD.CDS-PP,21073
+Lisboa 3 - SM 4,Lisboa 3,IL,5415
+Lisboa 3 - SM 4,Lisboa 3,L,4894
+Lisboa 3 - SM 4,Lisboa 3,PCP-PEV,4626
+Lisboa 3 - SM 4,Lisboa 3,B.E.,1949
+Lisboa 3 - SM 4,Lisboa 3,PAN,1666
+Lisboa 3 - SM 4,Lisboa 3,ADN,1151
+Lisboa 3 - SM 4,Lisboa 3,PCTP/MRPP,360
+Lisboa 3 - SM 4,Lisboa 3,VP,180
+Lisboa 3 - SM 4,Lisboa 3,R.I.R.,163
+Lisboa 3 - SM 4,Lisboa 3,ND,162
+Lisboa 3 - SM 4,Lisboa 3,E,146
+Lisboa 3 - SM 4,Lisboa 3,PLS,140
+Lisboa 3 - SM 4,Lisboa 3,JPP,74
+Lisboa 3 - SM 4,Lisboa 3,PPM,65
+Lisboa 3 - SM 4,Lisboa 3,NC,61
+Lisboa 3 - SM 5,Lisboa 3,PPD/PSD.CDS-PP,14372
+Lisboa 3 - SM 5,Lisboa 3,CH,12365
+Lisboa 3 - SM 5,Lisboa 3,PS,10735
+Lisboa 3 - SM 5,Lisboa 3,IL,4011
+Lisboa 3 - SM 5,Lisboa 3,L,2924
+Lisboa 3 - SM 5,Lisboa 3,PCP-PEV,1860
+Lisboa 3 - SM 5,Lisboa 3,B.E.,1050
+Lisboa 3 - SM 5,Lisboa 3,PAN,913
+Lisboa 3 - SM 5,Lisboa 3,ADN,699
+Lisboa 3 - SM 5,Lisboa 3,PCTP/MRPP,183
+Lisboa 3 - SM 5,Lisboa 3,VP,122
+Lisboa 3 - SM 5,Lisboa 3,R.I.R.,112
+Lisboa 3 - SM 5,Lisboa 3,E,90
+Lisboa 3 - SM 5,Lisboa 3,ND,87
+Lisboa 3 - SM 5,Lisboa 3,PLS,76
+Lisboa 3 - SM 5,Lisboa 3,PPM,32
+Lisboa 3 - SM 5,Lisboa 3,NC,29
+Lisboa 3 - SM 5,Lisboa 3,JPP,27
+Madeira - SM 1,Madeira,PPD/PSD.CDS-PP,33595
+Madeira - SM 1,Madeira,CH,16227
+Madeira - SM 1,Madeira,PS,9666
+Madeira - SM 1,Madeira,JPP,7172
+Madeira - SM 1,Madeira,IL,1950
+Madeira - SM 1,Madeira,B.E.,1034
+Madeira - SM 1,Madeira,PCP-PEV,998
+Madeira - SM 1,Madeira,L,927
+Madeira - SM 1,Madeira,ADN,883
+Madeira - SM 1,Madeira,PAN,835
+Madeira - SM 1,Madeira,ND,245
+Madeira - SM 1,Madeira,PPM,243
+Madeira - SM 1,Madeira,PTP,231
+Madeira - SM 1,Madeira,MPT,208
+Madeira - SM 1,Madeira,R.I.R.,176
+Madeira - SM 1,Madeira,E,110
+Madeira - SM 2,Madeira,PPD/PSD.CDS-PP,23852
+Madeira - SM 2,Madeira,CH,12811
+Madeira - SM 2,Madeira,JPP,9943
+Madeira - SM 2,Madeira,PS,9038
+Madeira - SM 2,Madeira,IL,1707
+Madeira - SM 2,Madeira,B.E.,836
+Madeira - SM 2,Madeira,L,822
+Madeira - SM 2,Madeira,PCP-PEV,765
+Madeira - SM 2,Madeira,ADN,671
+Madeira - SM 2,Madeira,PAN,610
+Madeira - SM 2,Madeira,PPM,211
+Madeira - SM 2,Madeira,PTP,190
+Madeira - SM 2,Madeira,ND,187
+Madeira - SM 2,Madeira,R.I.R.,170
+Madeira - SM 2,Madeira,MPT,150
+Madeira - SM 2,Madeira,E,77
+Porto 1 - SM 1,Porto 1,PPD/PSD.CDS-PP,40389
+Porto 1 - SM 1,Porto 1,PS,26182
+Porto 1 - SM 1,Porto 1,CH,21428
+Porto 1 - SM 1,Porto 1,IL,3971
+Porto 1 - SM 1,Porto 1,L,2775
+Porto 1 - SM 1,Porto 1,B.E.,1607
+Porto 1 - SM 1,Porto 1,ADN,1524
+Porto 1 - SM 1,Porto 1,PCP-PEV,1293
+Porto 1 - SM 1,Porto 1,R.I.R.,1097
+Porto 1 - SM 1,Porto 1,PAN,885
+Porto 1 - SM 1,Porto 1,PLS,416
+Porto 1 - SM 1,Porto 1,VP,297
+Porto 1 - SM 1,Porto 1,ND,265
+Porto 1 - SM 1,Porto 1,E,180
+Porto 1 - SM 1,Porto 1,PCTP/MRPP,159
+Porto 1 - SM 1,Porto 1,NC,147
+Porto 1 - SM 1,Porto 1,PPM,70
+Porto 1 - SM 1,Porto 1,JPP,65
+Porto 1 - SM 2,Porto 1,PPD/PSD.CDS-PP,56561
+Porto 1 - SM 2,Porto 1,PS,38427
+Porto 1 - SM 2,Porto 1,CH,34460
+Porto 1 - SM 2,Porto 1,IL,7216
+Porto 1 - SM 2,Porto 1,L,3956
+Porto 1 - SM 2,Porto 1,PCP-PEV,2252
+Porto 1 - SM 2,Porto 1,B.E.,2194
+Porto 1 - SM 2,Porto 1,ADN,2071
+Porto 1 - SM 2,Porto 1,PAN,1449
+Porto 1 - SM 2,Porto 1,PLS,652
+Porto 1 - SM 2,Porto 1,R.I.R.,592
+Porto 1 - SM 2,Porto 1,VP,404
+Porto 1 - SM 2,Porto 1,ND,402
+Porto 1 - SM 2,Porto 1,PCTP/MRPP,274
+Porto 1 - SM 2,Porto 1,NC,266
+Porto 1 - SM 2,Porto 1,E,209
+Porto 1 - SM 2,Porto 1,JPP,112
+Porto 1 - SM 2,Porto 1,PPM,95
+Porto 1 - SM 3,Porto 1,PPD/PSD.CDS-PP,43846
+Porto 1 - SM 3,Porto 1,PS,31283
+Porto 1 - SM 3,Porto 1,CH,25910
+Porto 1 - SM 3,Porto 1,IL,8918
+Porto 1 - SM 3,Porto 1,L,6370
+Porto 1 - SM 3,Porto 1,PCP-PEV,3124
+Porto 1 - SM 3,Porto 1,B.E.,2882
+Porto 1 - SM 3,Porto 1,PAN,2318
+Porto 1 - SM 3,Porto 1,ADN,1237
+Porto 1 - SM 3,Porto 1,PLS,419
+Porto 1 - SM 3,Porto 1,R.I.R.,301
+Porto 1 - SM 3,Porto 1,VP,290
+Porto 1 - SM 3,Porto 1,PCTP/MRPP,260
+Porto 1 - SM 3,Porto 1,E,194
+Porto 1 - SM 3,Porto 1,ND,185
+Porto 1 - SM 3,Porto 1,NC,133
+Porto 1 - SM 3,Porto 1,JPP,96
+Porto 1 - SM 3,Porto 1,PPM,43
+Porto 1 - SM 4,Porto 1,PPD/PSD.CDS-PP,32058
+Porto 1 - SM 4,Porto 1,PS,27909
+Porto 1 - SM 4,Porto 1,CH,25758
+Porto 1 - SM 4,Porto 1,IL,6415
+Porto 1 - SM 4,Porto 1,L,4722
+Porto 1 - SM 4,Porto 1,PCP-PEV,3750
+Porto 1 - SM 4,Porto 1,B.E.,2551
+Porto 1 - SM 4,Porto 1,PAN,2141
+Porto 1 - SM 4,Porto 1,ADN,1015
+Porto 1 - SM 4,Porto 1,PLS,336
+Porto 1 - SM 4,Porto 1,R.I.R.,327
+Porto 1 - SM 4,Porto 1,PCTP/MRPP,320
+Porto 1 - SM 4,Porto 1,VP,233
+Porto 1 - SM 4,Porto 1,E,199
+Porto 1 - SM 4,Porto 1,ND,134
+Porto 1 - SM 4,Porto 1,JPP,105
+Porto 1 - SM 4,Porto 1,NC,81
+Porto 1 - SM 4,Porto 1,PPM,62
+Porto 1 - SM 5,Porto 1,PPD/PSD.CDS-PP,11509
+Porto 1 - SM 5,Porto 1,PS,11085
+Porto 1 - SM 5,Porto 1,CH,9029
+Porto 1 - SM 5,Porto 1,IL,2642
+Porto 1 - SM 5,Porto 1,L,2045
+Porto 1 - SM 5,Porto 1,PCP-PEV,1179
+Porto 1 - SM 5,Porto 1,B.E.,960
+Porto 1 - SM 5,Porto 1,PAN,786
+Porto 1 - SM 5,Porto 1,ADN,350
+Porto 1 - SM 5,Porto 1,PLS,137
+Porto 1 - SM 5,Porto 1,PCTP/MRPP,105
+Porto 1 - SM 5,Porto 1,R.I.R.,102
+Porto 1 - SM 5,Porto 1,E,72
+Porto 1 - SM 5,Porto 1,VP,72
+Porto 1 - SM 5,Porto 1,ND,44
+Porto 1 - SM 5,Porto 1,NC,42
+Porto 1 - SM 5,Porto 1,PPM,29
+Porto 1 - SM 5,Porto 1,JPP,28
+Porto 2 - SM 1,Porto 2,PPD/PSD.CDS-PP,30639
+Porto 2 - SM 1,Porto 2,PS,20705
+Porto 2 - SM 1,Porto 2,CH,12322
+Porto 2 - SM 1,Porto 2,IL,6646
+Porto 2 - SM 1,Porto 2,L,6280
+Porto 2 - SM 1,Porto 2,PCP-PEV,3292
+Porto 2 - SM 1,Porto 2,B.E.,2595
+Porto 2 - SM 1,Porto 2,PAN,1357
+Porto 2 - SM 1,Porto 2,ADN,590
+Porto 2 - SM 1,Porto 2,PLS,200
+Porto 2 - SM 1,Porto 2,PCTP/MRPP,199
+Porto 2 - SM 1,Porto 2,VP,164
+Porto 2 - SM 1,Porto 2,E,140
+Porto 2 - SM 1,Porto 2,R.I.R.,140
+Porto 2 - SM 1,Porto 2,ND,100
+Porto 2 - SM 1,Porto 2,PPM,69
+Porto 2 - SM 1,Porto 2,NC,44
+Porto 2 - SM 1,Porto 2,JPP,39
+Porto 2 - SM 2,Porto 2,PPD/PSD.CDS-PP,30270
+Porto 2 - SM 2,Porto 2,CH,19801
+Porto 2 - SM 2,Porto 2,PS,16341
+Porto 2 - SM 2,Porto 2,IL,5300
+Porto 2 - SM 2,Porto 2,L,2999
+Porto 2 - SM 2,Porto 2,B.E.,1437
+Porto 2 - SM 2,Porto 2,PCP-PEV,1329
+Porto 2 - SM 2,Porto 2,PAN,1066
+Porto 2 - SM 2,Porto 2,ADN,890
+Porto 2 - SM 2,Porto 2,PLS,283
+Porto 2 - SM 2,Porto 2,VP,176
+Porto 2 - SM 2,Porto 2,R.I.R.,157
+Porto 2 - SM 2,Porto 2,PCTP/MRPP,142
+Porto 2 - SM 2,Porto 2,ND,117
+Porto 2 - SM 2,Porto 2,E,108
+Porto 2 - SM 2,Porto 2,NC,90
+Porto 2 - SM 2,Porto 2,JPP,48
+Porto 2 - SM 2,Porto 2,PPM,41
+Porto 2 - SM 3,Porto 2,PPD/PSD.CDS-PP,25409
+Porto 2 - SM 3,Porto 2,CH,16155
+Porto 2 - SM 3,Porto 2,PS,13561
+Porto 2 - SM 3,Porto 2,IL,3241
+Porto 2 - SM 3,Porto 2,L,1775
+Porto 2 - SM 3,Porto 2,B.E.,1020
+Porto 2 - SM 3,Porto 2,ADN,911
+Porto 2 - SM 3,Porto 2,PAN,904
+Porto 2 - SM 3,Porto 2,PCP-PEV,889
+Porto 2 - SM 3,Porto 2,R.I.R.,416
+Porto 2 - SM 3,Porto 2,VP,255
+Porto 2 - SM 3,Porto 2,E,232
+Porto 2 - SM 3,Porto 2,PLS,213
+Porto 2 - SM 3,Porto 2,ND,144
+Porto 2 - SM 3,Porto 2,PCTP/MRPP,128
+Porto 2 - SM 3,Porto 2,NC,79
+Porto 2 - SM 3,Porto 2,PPM,53
+Porto 2 - SM 3,Porto 2,JPP,52
+Porto 2 - SM 4,Porto 2,PPD/PSD.CDS-PP,46320
+Porto 2 - SM 4,Porto 2,PS,36824
+Porto 2 - SM 4,Porto 2,CH,25602
+Porto 2 - SM 4,Porto 2,IL,10646
+Porto 2 - SM 4,Porto 2,L,7620
+Porto 2 - SM 4,Porto 2,PCP-PEV,3741
+Porto 2 - SM 4,Porto 2,B.E.,3197
+Porto 2 - SM 4,Porto 2,PAN,2476
+Porto 2 - SM 4,Porto 2,ADN,1092
+Porto 2 - SM 4,Porto 2,PLS,396
+Porto 2 - SM 4,Porto 2,VP,305
+Porto 2 - SM 4,Porto 2,R.I.R.,297
+Porto 2 - SM 4,Porto 2,PCTP/MRPP,266
+Porto 2 - SM 4,Porto 2,E,201
+Porto 2 - SM 4,Porto 2,ND,171
+Porto 2 - SM 4,Porto 2,JPP,83
+Porto 2 - SM 4,Porto 2,NC,77
+Porto 2 - SM 4,Porto 2,PPM,52
+Porto 2 - SM 5,Porto 2,PPD/PSD.CDS-PP,24868
+Porto 2 - SM 5,Porto 2,PS,14194
+Porto 2 - SM 5,Porto 2,CH,14036
+Porto 2 - SM 5,Porto 2,IL,4726
+Porto 2 - SM 5,Porto 2,L,2813
+Porto 2 - SM 5,Porto 2,B.E.,1072
+Porto 2 - SM 5,Porto 2,PCP-PEV,1054
+Porto 2 - SM 5,Porto 2,PAN,1001
+Porto 2 - SM 5,Porto 2,ADN,653
+Porto 2 - SM 5,Porto 2,PLS,220
+Porto 2 - SM 5,Porto 2,R.I.R.,175
+Porto 2 - SM 5,Porto 2,VP,159
+Porto 2 - SM 5,Porto 2,ND,99
+Porto 2 - SM 5,Porto 2,E,95
+Porto 2 - SM 5,Porto 2,PCTP/MRPP,92
+Porto 2 - SM 5,Porto 2,NC,57
+Porto 2 - SM 5,Porto 2,JPP,53
+Porto 2 - SM 5,Porto 2,PPM,34
+Porto 2 - SM 6,Porto 2,PPD/PSD.CDS-PP,33737
+Porto 2 - SM 6,Porto 2,PS,27282
+Porto 2 - SM 6,Porto 2,CH,22305
+Porto 2 - SM 6,Porto 2,IL,7205
+Porto 2 - SM 6,Porto 2,L,5801
+Porto 2 - SM 6,Porto 2,PCP-PEV,3099
+Porto 2 - SM 6,Porto 2,B.E.,2677
+Porto 2 - SM 6,Porto 2,PAN,2050
+Porto 2 - SM 6,Porto 2,ADN,942
+Porto 2 - SM 6,Porto 2,R.I.R.,363
+Porto 2 - SM 6,Porto 2,PLS,323
+Porto 2 - SM 6,Porto 2,PCTP/MRPP,234
+Porto 2 - SM 6,Porto 2,VP,218
+Porto 2 - SM 6,Porto 2,ND,147
+Porto 2 - SM 6,Porto 2,E,141
+Porto 2 - SM 6,Porto 2,NC,89
+Porto 2 - SM 6,Porto 2,JPP,68
+Porto 2 - SM 6,Porto 2,PPM,48
+Santarém - SM 1,Santarém,CH,25212
+Santarém - SM 1,Santarém,PPD/PSD.CDS-PP,19599
+Santarém - SM 1,Santarém,PS,19251
+Santarém - SM 1,Santarém,PCP-PEV,3779
+Santarém - SM 1,Santarém,IL,2795
+Santarém - SM 1,Santarém,L,2368
+Santarém - SM 1,Santarém,B.E.,1453
+Santarém - SM 1,Santarém,ADN,1212
+Santarém - SM 1,Santarém,PAN,906
+Santarém - SM 1,Santarém,R.I.R.,177
+Santarém - SM 1,Santarém,VP,175
+Santarém - SM 1,Santarém,E,153
+Santarém - SM 1,Santarém,PPM,81
+Santarém - SM 2,Santarém,PPD/PSD.CDS-PP,29946
+Santarém - SM 2,Santarém,CH,21222
+Santarém - SM 2,Santarém,PS,16264
+Santarém - SM 2,Santarém,IL,3368
+Santarém - SM 2,Santarém,L,2651
+Santarém - SM 2,Santarém,PCP-PEV,1749
+Santarém - SM 2,Santarém,ADN,1542
+Santarém - SM 2,Santarém,B.E.,1411
+Santarém - SM 2,Santarém,PAN,871
+Santarém - SM 2,Santarém,R.I.R.,193
+Santarém - SM 2,Santarém,VP,178
+Santarém - SM 2,Santarém,E,154
+Santarém - SM 2,Santarém,PPM,77
+Santarém - SM 3,Santarém,PPD/PSD.CDS-PP,25171
+Santarém - SM 3,Santarém,CH,22253
+Santarém - SM 3,Santarém,PS,20030
+Santarém - SM 3,Santarém,IL,3430
+Santarém - SM 3,Santarém,PCP-PEV,3252
+Santarém - SM 3,Santarém,L,2838
+Santarém - SM 3,Santarém,B.E.,1503
+Santarém - SM 3,Santarém,ADN,1215
+Santarém - SM 3,Santarém,PAN,972
+Santarém - SM 3,Santarém,R.I.R.,168
+Santarém - SM 3,Santarém,VP,145
+Santarém - SM 3,Santarém,E,117
+Santarém - SM 3,Santarém,PPM,89
+Setúbal - SM 1,Setúbal,PPD/PSD.CDS-PP,12471
+Setúbal - SM 1,Setúbal,PS,12080
+Setúbal - SM 1,Setúbal,CH,11491
+Setúbal - SM 1,Setúbal,IL,3493
+Setúbal - SM 1,Setúbal,L,3252
+Setúbal - SM 1,Setúbal,PCP-PEV,2631
+Setúbal - SM 1,Setúbal,B.E.,1194
+Setúbal - SM 1,Setúbal,PAN,1070
+Setúbal - SM 1,Setúbal,ADN,504
+Setúbal - SM 1,Setúbal,PCTP/MRPP,231
+Setúbal - SM 1,Setúbal,VP,113
+Setúbal - SM 1,Setúbal,ND,82
+Setúbal - SM 1,Setúbal,E,78
+Setúbal - SM 1,Setúbal,PLS,77
+Setúbal - SM 1,Setúbal,R.I.R.,68
+Setúbal - SM 1,Setúbal,PPM,42
+Setúbal - SM 1,Setúbal,JPP,41
+Setúbal - SM 1,Setúbal,NC,34
+Setúbal - SM 2,Setúbal,CH,6544
+Setúbal - SM 2,Setúbal,PS,4935
+Setúbal - SM 2,Setúbal,PPD/PSD.CDS-PP,3859
+Setúbal - SM 2,Setúbal,PCP-PEV,1805
+Setúbal - SM 2,Setúbal,IL,718
+Setúbal - SM 2,Setúbal,L,716
+Setúbal - SM 2,Setúbal,B.E.,410
+Setúbal - SM 2,Setúbal,PAN,261
+Setúbal - SM 2,Setúbal,PCTP/MRPP,215
+Setúbal - SM 2,Setúbal,ADN,213
+Setúbal - SM 2,Setúbal,R.I.R.,47
+Setúbal - SM 2,Setúbal,PLS,30
+Setúbal - SM 2,Setúbal,E,27
+Setúbal - SM 2,Setúbal,NC,27
+Setúbal - SM 2,Setúbal,VP,26
+Setúbal - SM 2,Setúbal,JPP,25
+Setúbal - SM 2,Setúbal,ND,18
+Setúbal - SM 2,Setúbal,PPM,11
+Setúbal - SM 3,Setúbal,CH,31894
+Setúbal - SM 3,Setúbal,PS,26299
+Setúbal - SM 3,Setúbal,PPD/PSD.CDS-PP,20717
+Setúbal - SM 3,Setúbal,PCP-PEV,8422
+Setúbal - SM 3,Setúbal,IL,5973
+Setúbal - SM 3,Setúbal,L,5925
+Setúbal - SM 3,Setúbal,B.E.,2934
+Setúbal - SM 3,Setúbal,PAN,2065
+Setúbal - SM 3,Setúbal,ADN,830
+Setúbal - SM 3,Setúbal,PCTP/MRPP,741
+Setúbal - SM 3,Setúbal,VP,226
+Setúbal - SM 3,Setúbal,PLS,216
+Setúbal - SM 3,Setúbal,R.I.R.,171
+Setúbal - SM 3,Setúbal,ND,169
+Setúbal - SM 3,Setúbal,E,157
+Setúbal - SM 3,Setúbal,JPP,107
+Setúbal - SM 3,Setúbal,NC,105
+Setúbal - SM 3,Setúbal,PPM,55
+Setúbal - SM 4,Setúbal,CH,27060
+Setúbal - SM 4,Setúbal,PS,21935
+Setúbal - SM 4,Setúbal,PPD/PSD.CDS-PP,20086
+Setúbal - SM 4,Setúbal,PCP-PEV,6313
+Setúbal - SM 4,Setúbal,IL,4962
+Setúbal - SM 4,Setúbal,L,4947
+Setúbal - SM 4,Setúbal,B.E.,2515
+Setúbal - SM 4,Setúbal,PAN,1687
+Setúbal - SM 4,Setúbal,ADN,834
+Setúbal - SM 4,Setúbal,PCTP/MRPP,608
+Setúbal - SM 4,Setúbal,R.I.R.,159
+Setúbal - SM 4,Setúbal,VP,146
+Setúbal - SM 4,Setúbal,PLS,141
+Setúbal - SM 4,Setúbal,E,127
+Setúbal - SM 4,Setúbal,ND,115
+Setúbal - SM 4,Setúbal,JPP,96
+Setúbal - SM 4,Setúbal,NC,80
+Setúbal - SM 4,Setúbal,PPM,66
+Setúbal - SM 5,Setúbal,PS,42508
+Setúbal - SM 5,Setúbal,CH,35486
+Setúbal - SM 5,Setúbal,PPD/PSD.CDS-PP,30171
+Setúbal - SM 5,Setúbal,PCP-PEV,12385
+Setúbal - SM 5,Setúbal,L,10001
+Setúbal - SM 5,Setúbal,IL,7846
+Setúbal - SM 5,Setúbal,B.E.,4299
+Setúbal - SM 5,Setúbal,PAN,2954
+Setúbal - SM 5,Setúbal,ADN,1239
+Setúbal - SM 5,Setúbal,PCTP/MRPP,894
+Setúbal - SM 5,Setúbal,VP,286
+Setúbal - SM 5,Setúbal,PLS,275
+Setúbal - SM 5,Setúbal,E,222
+Setúbal - SM 5,Setúbal,ND,221
+Setúbal - SM 5,Setúbal,R.I.R.,199
+Setúbal - SM 5,Setúbal,JPP,127
+Setúbal - SM 5,Setúbal,NC,107
+Setúbal - SM 5,Setúbal,PPM,97
+Setúbal - SM 6,Setúbal,CH,17094
+Setúbal - SM 6,Setúbal,PPD/PSD.CDS-PP,15877
+Setúbal - SM 6,Setúbal,PS,14922
+Setúbal - SM 6,Setúbal,IL,4065
+Setúbal - SM 6,Setúbal,L,3859
+Setúbal - SM 6,Setúbal,PCP-PEV,3400
+Setúbal - SM 6,Setúbal,B.E.,1716
+Setúbal - SM 6,Setúbal,PAN,1192
+Setúbal - SM 6,Setúbal,ADN,567
+Setúbal - SM 6,Setúbal,PCTP/MRPP,301
+Setúbal - SM 6,Setúbal,PLS,108
+Setúbal - SM 6,Setúbal,R.I.R.,105
+Setúbal - SM 6,Setúbal,E,103
+Setúbal - SM 6,Setúbal,VP,89
+Setúbal - SM 6,Setúbal,ND,77
+Setúbal - SM 6,Setúbal,JPP,57
+Setúbal - SM 6,Setúbal,PPM,49
+Setúbal - SM 6,Setúbal,NC,36
+Trás-os-Montes - SM 1,Trás-os-Montes,PPD/PSD.CDS-PP,28966
+Trás-os-Montes - SM 1,Trás-os-Montes,PS,16397
+Trás-os-Montes - SM 1,Trás-os-Montes,CH,14488
+Trás-os-Montes - SM 1,Trás-os-Montes,IL,1421
+Trás-os-Montes - SM 1,Trás-os-Montes,ADN,968
+Trás-os-Montes - SM 1,Trás-os-Montes,L,952
+Trás-os-Montes - SM 1,Trás-os-Montes,PCP-PEV,857
+Trás-os-Montes - SM 1,Trás-os-Montes,B.E.,621
+Trás-os-Montes - SM 1,Trás-os-Montes,PAN,456
+Trás-os-Montes - SM 1,Trás-os-Montes,R.I.R.,113
+Trás-os-Montes - SM 1,Trás-os-Montes,PPM,103
+Trás-os-Montes - SM 1,Trás-os-Montes,E,71
+Trás-os-Montes - SM 1,Trás-os-Montes,VP,67
+Trás-os-Montes - SM 2,Trás-os-Montes,PPD/PSD.CDS-PP,23677
+Trás-os-Montes - SM 2,Trás-os-Montes,PS,13261
+Trás-os-Montes - SM 2,Trás-os-Montes,CH,10273
+Trás-os-Montes - SM 2,Trás-os-Montes,IL,1151
+Trás-os-Montes - SM 2,Trás-os-Montes,ADN,817
+Trás-os-Montes - SM 2,Trás-os-Montes,L,581
+Trás-os-Montes - SM 2,Trás-os-Montes,PCP-PEV,483
+Trás-os-Montes - SM 2,Trás-os-Montes,B.E.,451
+Trás-os-Montes - SM 2,Trás-os-Montes,PAN,338
+Trás-os-Montes - SM 2,Trás-os-Montes,R.I.R.,69
+Trás-os-Montes - SM 2,Trás-os-Montes,E,63
+Trás-os-Montes - SM 2,Trás-os-Montes,VP,60
+Trás-os-Montes - SM 2,Trás-os-Montes,PPM,45
+Trás-os-Montes - SM 3,Trás-os-Montes,PPD/PSD.CDS-PP,28490
+Trás-os-Montes - SM 3,Trás-os-Montes,PS,16128
+Trás-os-Montes - SM 3,Trás-os-Montes,CH,12281
+Trás-os-Montes - SM 3,Trás-os-Montes,IL,1436
+Trás-os-Montes - SM 3,Trás-os-Montes,L,1002
+Trás-os-Montes - SM 3,Trás-os-Montes,ADN,999
+Trás-os-Montes - SM 3,Trás-os-Montes,PCP-PEV,786
+Trás-os-Montes - SM 3,Trás-os-Montes,B.E.,669
+Trás-os-Montes - SM 3,Trás-os-Montes,PAN,450
+Trás-os-Montes - SM 3,Trás-os-Montes,PPM,104
+Trás-os-Montes - SM 3,Trás-os-Montes,R.I.R.,97
+Trás-os-Montes - SM 3,Trás-os-Montes,E,76
+Trás-os-Montes - SM 3,Trás-os-Montes,VP,70
+Viana do Castelo - SM 1,Viana do Castelo,PPD/PSD.CDS-PP,27098
+Viana do Castelo - SM 1,Viana do Castelo,CH,16547
+Viana do Castelo - SM 1,Viana do Castelo,PS,15349
+Viana do Castelo - SM 1,Viana do Castelo,IL,3232
+Viana do Castelo - SM 1,Viana do Castelo,L,2220
+Viana do Castelo - SM 1,Viana do Castelo,PCP-PEV,1838
+Viana do Castelo - SM 1,Viana do Castelo,B.E.,1370
+Viana do Castelo - SM 1,Viana do Castelo,ADN,1041
+Viana do Castelo - SM 1,Viana do Castelo,PAN,667
+Viana do Castelo - SM 1,Viana do Castelo,R.I.R.,176
+Viana do Castelo - SM 1,Viana do Castelo,E,152
+Viana do Castelo - SM 1,Viana do Castelo,VP,111
+Viana do Castelo - SM 1,Viana do Castelo,PPM,73
+Viana do Castelo - SM 2,Viana do Castelo,PPD/PSD.CDS-PP,28278
+Viana do Castelo - SM 2,Viana do Castelo,CH,15594
+Viana do Castelo - SM 2,Viana do Castelo,PS,15044
+Viana do Castelo - SM 2,Viana do Castelo,IL,2112
+Viana do Castelo - SM 2,Viana do Castelo,L,1420
+Viana do Castelo - SM 2,Viana do Castelo,ADN,1006
+Viana do Castelo - SM 2,Viana do Castelo,PCP-PEV,925
+Viana do Castelo - SM 2,Viana do Castelo,B.E.,915
+Viana do Castelo - SM 2,Viana do Castelo,PAN,633
+Viana do Castelo - SM 2,Viana do Castelo,R.I.R.,139
+Viana do Castelo - SM 2,Viana do Castelo,E,123
+Viana do Castelo - SM 2,Viana do Castelo,VP,98
+Viana do Castelo - SM 2,Viana do Castelo,PPM,72
+Viseu - SM 1,Viseu,PPD/PSD.CDS-PP,27670
+Viseu - SM 1,Viseu,CH,14703
+Viseu - SM 1,Viseu,PS,13406
+Viseu - SM 1,Viseu,IL,1714
+Viseu - SM 1,Viseu,ADN,1328
+Viseu - SM 1,Viseu,L,981
+Viseu - SM 1,Viseu,PCP-PEV,884
+Viseu - SM 1,Viseu,B.E.,596
+Viseu - SM 1,Viseu,R.I.R.,160
+Viseu - SM 1,Viseu,ND,144
+Viseu - SM 1,Viseu,PPM,124
+Viseu - SM 1,Viseu,VP,71
+Viseu - SM 1,Viseu,E,65
+Viseu - SM 2,Viseu,PPD/PSD.CDS-PP,25816
+Viseu - SM 2,Viseu,CH,13742
+Viseu - SM 2,Viseu,PS,12901
+Viseu - SM 2,Viseu,IL,1688
+Viseu - SM 2,Viseu,ADN,1274
+Viseu - SM 2,Viseu,L,1248
+Viseu - SM 2,Viseu,B.E.,744
+Viseu - SM 2,Viseu,PCP-PEV,654
+Viseu - SM 2,Viseu,R.I.R.,158
+Viseu - SM 2,Viseu,ND,132
+Viseu - SM 2,Viseu,PPM,91
+Viseu - SM 2,Viseu,E,72
+Viseu - SM 2,Viseu,VP,71
+Viseu - SM 3,Viseu,PPD/PSD.CDS-PP,34888
+Viseu - SM 3,Viseu,PS,18903
+Viseu - SM 3,Viseu,CH,17349
+Viseu - SM 3,Viseu,IL,3063
+Viseu - SM 3,Viseu,L,2165
+Viseu - SM 3,Viseu,ADN,1586
+Viseu - SM 3,Viseu,B.E.,1124
+Viseu - SM 3,Viseu,PCP-PEV,951
+Viseu - SM 3,Viseu,R.I.R.,229
+Viseu - SM 3,Viseu,ND,155
+Viseu - SM 3,Viseu,PPM,129
+Viseu - SM 3,Viseu,VP,104
+Viseu - SM 3,Viseu,E,90
