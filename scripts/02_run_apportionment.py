@@ -141,8 +141,11 @@ def main(argv: list[str] | None = None) -> int:
     # ------------------------------------------------------------------
     # 6. Write outputs.
     # ------------------------------------------------------------------
-    out_tables = ROOT / cfg.paths["outputs_dir"] / "tables"
-    out_geojson = ROOT / cfg.paths["outputs_dir"] / "geojson"
+    scenario_root = cfg.scenario_outputs_dir()
+    out_tables = scenario_root / "tables"
+    out_geojson = scenario_root / "geojson"
+    for d in (out_tables, out_geojson):
+        d.mkdir(parents=True, exist_ok=True)
 
     # upper_district_membership.csv: parish -> upper_district
     membership = parishes_assigned[

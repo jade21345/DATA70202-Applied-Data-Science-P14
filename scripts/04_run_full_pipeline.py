@@ -64,12 +64,14 @@ def main(argv: list[str] | None = None) -> int:
     cfg = load_config(args.config)
     log.info("Scenario: %s (%s)", cfg.scenario_name, cfg.scenario_id)
 
-    out_tables = ROOT / cfg.paths["outputs_dir"] / "tables"
-    out_geojson = ROOT / cfg.paths["outputs_dir"] / "geojson"
-    out_json = ROOT / cfg.paths["outputs_dir"] / "json"
-    out_docs = ROOT / cfg.paths["outputs_dir"] / "documentation"
+    scenario_root = cfg.scenario_outputs_dir()
+    out_tables = scenario_root / "tables"
+    out_geojson = scenario_root / "geojson"
+    out_json = scenario_root / "json"
+    out_docs = scenario_root / "documentation"
     for d in (out_tables, out_geojson, out_json, out_docs):
         d.mkdir(parents=True, exist_ok=True)
+    log.info("Writing outputs to: %s", scenario_root)
 
     # ------------------------------------------------------------------
     # 1. Load inputs
@@ -144,6 +146,22 @@ def main(argv: list[str] | None = None) -> int:
     ], out_tables / "upper_district_membership.csv")
     write_csv(hamilton, out_tables / "hamilton_allocation.csv")
     write_csv(tier, out_tables / "tier_split.csv")
+
+    # Upper-district diagnostics (parish/muni counts + voters + mandates).
+    upper_diag = (
+        parishes_assigned.groupby("upper_district")
+        .agg(
+            n_parishes=("parish_id", "nunique"),
+            n_municipalities=("municipality_id", "nunique"),
+            n_distritos_original=("distrito_ilha", "nunique"),
+        )
+        .reset_index()
+        .merge(district_voters, on="upper_district")
+        .merge(hamilton[["upper_district", "total_mandates"]], on="upper_district")
+        .merge(tier[["upper_district", "party_list_seats", "single_member_seats"]],
+               on="upper_district")
+    )
+    write_csv(upper_diag, out_tables / "upper_district_diagnostics.csv")
 
     # ------------------------------------------------------------------
     # 6. Vote aggregation to upper tier
@@ -243,8 +261,28 @@ def main(argv: list[str] | None = None) -> int:
     log.info("Wrote parliament JSON: %s", out_json / "final_party_seat_results.json")
 
     # ------------------------------------------------------------------
-    # 12. GeoJSON for the static frontend
+    # 12. GeoJSON for the static frontend (with slug ids + scenario_id)
     # ------------------------------------------------------------------
+    from slugs import slugify
+
+    # Build an upper-district -> dominant party (most party-list seats)
+    # mapping. Dominant party is *not* a winner under the model, but it
+    # gives the frontend a sensible default colour for the upper-tier
+    # choropleth.
+    dominant = (
+        dhondt.sort_values(
+            ["upper_district", "allocated_seats", "votes"],
+            ascending=[True, False, False],
+        )
+        .drop_duplicates("upper_district")
+        .rename(columns={"party": "dominant_party", "allocated_seats": "dominant_party_seats"})
+        [["upper_district", "dominant_party", "dominant_party_seats"]]
+    )
+    dominant = dominant.merge(
+        parties_meta[["party_id", "party_id_short"]],
+        left_on="dominant_party", right_on="party_id", how="left",
+    ).drop(columns=["party_id"]).rename(columns={"party_id_short": "dominant_party_id"})
+
     # Upper districts.
     dissolved_upper = parishes_assigned.dissolve(by="upper_district").reset_index()
     dissolved_upper = dissolved_upper[["upper_district", "geometry"]]
@@ -254,11 +292,18 @@ def main(argv: list[str] | None = None) -> int:
         .merge(hamilton[["upper_district", "total_mandates"]], on="upper_district")
         .merge(tier[["upper_district", "party_list_seats", "single_member_seats"]],
                on="upper_district")
+        .merge(dominant[["upper_district", "dominant_party", "dominant_party_id",
+                         "dominant_party_seats"]],
+               on="upper_district", how="left")
     )
+    dissolved_upper["upper_district_id"] = dissolved_upper["upper_district"].apply(slugify)
+    dissolved_upper["upper_district_name"] = dissolved_upper["upper_district"]
+    dissolved_upper["scenario_id"] = cfg.scenario_id
+    dissolved_upper = dissolved_upper.drop(columns=["upper_district"])
     dissolved_upper = gpd.GeoDataFrame(dissolved_upper, crs=parishes_assigned.crs)
     write_geojson(dissolved_upper, out_geojson / "upper_districts.geojson", cfg.export_crs)
 
-    # Lower districts (with winner attribute for direct rendering).
+    # Lower districts.
     parish_to_lower = lower_membership.merge(
         parishes_assigned[["parish_id", "geometry"]], on="parish_id", how="left",
     )
@@ -268,14 +313,51 @@ def main(argv: list[str] | None = None) -> int:
         dissolved_lower[["lower_district", "geometry"]]
         .merge(lower_diag, on="lower_district")
         .merge(sm_winners, on=["lower_district", "parent_upper_district"])
-        .merge(parties_meta[["party_id", "short_name", "color"]],
+        .merge(parties_meta[["party_id", "party_id_short", "short_name", "color"]],
                left_on="winning_party", right_on="party_id", how="left")
     )
+    dissolved_lower = dissolved_lower.rename(columns={
+        "party_id_short": "winner_party_id",
+        "short_name": "winner_party_short_name",
+        "color": "winner_party_color",
+    }).drop(columns=["party_id"])
+    dissolved_lower["lower_district_id"] = dissolved_lower["lower_district"].apply(slugify)
+    dissolved_lower["lower_district_name"] = dissolved_lower["lower_district"]
+    dissolved_lower["parent_upper_district_id"] = dissolved_lower["parent_upper_district"].apply(slugify)
+    dissolved_lower["parent_upper_district_name"] = dissolved_lower["parent_upper_district"]
+    dissolved_lower["scenario_id"] = cfg.scenario_id
+    dissolved_lower = dissolved_lower.drop(columns=["lower_district", "parent_upper_district"])
     dissolved_lower = gpd.GeoDataFrame(dissolved_lower, crs=parishes_assigned.crs)
     write_geojson(dissolved_lower, out_geojson / "lower_districts.geojson", cfg.export_crs)
 
     # ------------------------------------------------------------------
-    # 13. Documentation
+    # 13. scenario_summary.json (compact summary for the frontend home page)
+    # ------------------------------------------------------------------
+    summary = {
+        "scenario_id": cfg.scenario_id,
+        "scenario_name": cfg.scenario_name,
+        "election_year": cfg.election_year,
+        "total_seats": cfg.total_seats,
+        "allocated_seats": int(final["total_seats"].sum()),
+        "party_list_seats_total": int(tier["party_list_seats"].sum()),
+        "single_member_seats_total": int(tier["single_member_seats"].sum()),
+        "n_upper_districts": int(len(hamilton)),
+        "n_lower_districts": int(len(lower_diag)),
+        "tier_split_rounding": cfg.tier_split_rounding,
+        "party_list_ratio": cfg.party_list_ratio,
+        "single_member_ratio": cfg.single_member_ratio,
+        "district_apportionment_method": cfg.district_apportionment_method,
+        "party_list_allocation_method": cfg.party_list_allocation_method,
+        "lower_tier_method": cfg.lower_tier_method,
+        "data_version": cfg.data_version,
+        "created_at": cfg.created_at,
+    }
+    with (out_json / "scenario_summary.json").open("w", encoding="utf-8") as f:
+        json.dump(summary, f, ensure_ascii=False, indent=2)
+    log.info("Wrote scenario summary: %s", out_json / "scenario_summary.json")
+
+    # ------------------------------------------------------------------
+    # 14. Documentation
     # ------------------------------------------------------------------
     # Save a copy of the scenario config and a data dictionary.
     with (out_docs / "scenario_config.json").open("w", encoding="utf-8") as f:

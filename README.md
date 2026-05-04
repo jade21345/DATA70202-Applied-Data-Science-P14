@@ -1,12 +1,16 @@
-# Portugal Mixed-Member Electoral Model — Algorithm Pipeline
+# Portugal Mixed-Member Electoral Model — Algorithm + Backend
 
 Static-website pipeline simulating a proposed two-tier mixed-member
 proportional representation system for Portuguese legislative elections.
 
-This repository contains the offline Python pipeline that reads CAOP
-2025 administrative geometries and AR 2025 election data, computes the
-redesigned upper-tier districts, allocates seats with Hamilton + D'Hondt,
-and emits frontend-ready CSV/GeoJSON files for the static-site team.
+This repository contains:
+- An offline Python pipeline that processes CAOP 2025 administrative
+  geometries and AR 2025 election data, computes the redesigned
+  upper-tier districts, and runs Hamilton + D'Hondt + lower-tier
+  districting.
+- A FastAPI backend that exposes the pre-computed scenario outputs as
+  a clean HTTP API for the static frontend.
+- Sample scripts and tests covering both layers.
 
 ## Methodology summary
 
@@ -15,78 +19,98 @@ and emits frontend-ready CSV/GeoJSON files for the static-site team.
    permanent merging (Madeira, Açores), configured merging
    (Trás-os-Montes, Alentejo, Beira Baixa), and algorithmic splitting
    (Lisboa into 3, Porto into 2, balanced on registered voters).
-2. **Hamilton apportionment** — 226 mandates are distributed across the
-   redesigned districts in proportion to registered voters (largest
-   remainder method).
+2. **Hamilton apportionment** — 226 mandates are distributed across
+   the 19 redesigned districts in proportion to registered voters
+   (largest remainder method).
 3. **Tier split** — each district's mandates are split into party-list
-   seats `P_i = floor(0.7 * S_i)` and single-member seats `U_i = S_i - P_i`.
-   In 2025 this gives 152 party-list and 74 single-member seats
-   (mainland 70 + islands 4).
+   seats `P_i = floor(0.7 * S_i)` and single-member seats
+   `U_i = S_i - P_i`. In 2025 this gives 152 party-list and 74
+   single-member seats (mainland 70 + islands 4).
 4. **D'Hondt allocation** — each district's party-list seats are
    distributed among parties in proportion to votes (highest averages).
-5. **Lower-tier districting** *(WIP)* — within each upper-tier district,
-   parishes are aggregated into `U_i` contiguous single-member districts
-   of approximately equal voters.
+5. **Lower-tier districting** — within each upper-tier district,
+   parishes are aggregated into `U_i` contiguous lower-tier districts
+   of approximately equal voters via seed-based region-growing.
+6. **Single-member winners** — without candidate-level data, the
+   party with the most votes in each lower-tier district is treated
+   as the winner (a counterfactual simplifying assumption documented
+   in every relevant output).
 
 ## Repository layout
 
 ```
 project_root/
 ├── config/
-│   └── scenario_config.json         scenario parameters and rules
-├── data_raw/                        input data (gitignored)
-│   ├── *.gpkg                       CAOP 2025 geopackages
-│   └── *.xlsx                       AR 2025 results
-├── data_clean/                      ETL outputs (intermediate)
-├── outputs/                         frontend deliverables
-│   ├── geojson/
-│   ├── tables/
-│   ├── json/
-│   └── documentation/
+│   ├── scenario_config.json     pipeline parameters
+│   └── parties.csv              party metadata (id, slug, name, colour)
+├── data_raw/                    input data (gitignored)
+├── data_clean/                  ETL outputs (intermediate)
+├── outputs/
+│   └── scenarios/
+│       └── baseline_2025/
+│           ├── geojson/         upper_districts, lower_districts
+│           ├── tables/          all CSV outputs
+│           ├── json/            scenario_summary, parliament JSON
+│           └── documentation/
 ├── scripts/
-│   ├── 01_prepare_data.py           clean and unify raw data
-│   ├── 02_run_apportionment.py      Hamilton + tier split + redesign
-│   └── 03_validate_against_client.py compare to RESULTS_2025.xlsx
+│   ├── 01_prepare_data.py       clean and unify raw data
+│   ├── 02_run_apportionment.py  Hamilton + tier split only
+│   ├── 03_validate_against_client.py
+│   ├── 04_run_full_pipeline.py  full end-to-end pipeline
+│   ├── run_server.sh            start backend (Linux/macOS)
+│   └── run_server.bat           start backend (Windows)
 ├── src/
-│   ├── config.py                    JSON config loader
-│   ├── io_utils.py                  data loaders, GIS, CSV
-│   ├── apportionment.py             Hamilton, tier split, D'Hondt
-│   ├── upper_redesign.py            merge + split rules
-│   ├── spatial_utils.py             adjacency graphs, balanced partition
-│   └── validation.py                schema and invariant checks
+│   ├── config.py                JSON config loader
+│   ├── io_utils.py              data loaders, GIS, CSV
+│   ├── apportionment.py         Hamilton, tier split, D'Hondt
+│   ├── upper_redesign.py        merge + split rules
+│   ├── lower_districting.py     seed-based region growing
+│   ├── spatial_utils.py         adjacency graphs, balanced partition
+│   ├── vote_aggregation.py      parish -> district vote rollup
+│   ├── results.py               combine into final party totals
+│   ├── slugs.py                 name -> URL/JSON-friendly slug
+│   └── validation.py            schema and invariant checks
+├── backend/
+│   ├── main.py                  FastAPI app + CORS + static mount
+│   ├── api/                     scenarios, results, maps, diagnostics
+│   ├── services/                file loaders + integrity checks
+│   ├── schemas/                 Pydantic response models
+│   └── README.md
+├── app/                         frontend (Jade's domain)
 ├── tests/
-│   └── test_apportionment.py        pytest suite
-└── docs/
-    ├── design_notes.md              architecture decisions
-    └── notes_zh.md                  中文模块笔记 (internal)
+│   ├── test_apportionment.py    algorithm tests
+│   └── test_backend.py          backend integration tests
+├── docs/
+│   ├── design_notes.md          architecture decisions (English)
+│   ├── frontend_api_guide.md    API reference for the frontend team
+│   └── notes_zh.md              中文笔记 (internal)
+└── requirements.txt
 ```
 
-## Setup
+## Quick start
 
 ```bash
-pip install pandas geopandas networkx numpy openpyxl pyogrio shapely
-pip install pytest         # for tests
+pip install -r requirements.txt
+
+# Place the four CAOP 2025 geopackages and AR 2025 spreadsheets in data_raw/
+# (see config/scenario_config.json for the exact filenames).
+
+python scripts/01_prepare_data.py             # clean and unify raw data (~5s)
+python scripts/04_run_full_pipeline.py        # full pipeline (~25s)
+python scripts/03_validate_against_client.py  # cross-check vs client RESULTS_2025
+
+# Start the backend + frontend
+./scripts/run_server.sh                       # Linux/macOS
+scripts\run_server.bat                        # Windows
 ```
 
-Place the four CAOP 2025 geopackages and the AR 2025 spreadsheets under
-`data_raw/`. See `config/scenario_config.json` for expected file names.
-
-## Run
-
-```bash
-python scripts/01_prepare_data.py            # ETL: gpkg + xlsx -> data_clean/
-python scripts/02_run_apportionment.py       # Hamilton + tier split only
-python scripts/03_validate_against_client.py # cross-check vs RESULTS_2025.xlsx
-python scripts/04_run_full_pipeline.py       # full pipeline incl. lower-tier
-```
-
-Each script logs progress to stdout and writes outputs to disk. Module
-functions are pure and importable from `src/` for use in notebooks.
+Then open `http://localhost:8000/`. The frontend (`app/`) and the API
+(`/api/*`) share one origin.
 
 ## Validation status
 
-Apportionment-side validation against `RESULTS_2025.xlsx` ground truth
-(2025 data, `tier_split_rounding=floor`):
+Apportionment-side validation against the client's `RESULTS_2025.xlsx`
+ground truth (2025 data, `tier_split_rounding=floor`):
 
 | Metric | Pipeline | Client | Match |
 |---|---|---|---|
@@ -95,50 +119,44 @@ Apportionment-side validation against `RESULTS_2025.xlsx` ground truth
 | Mainland single-member | 70 | 70 | yes |
 | Island single-member | 4 | 4 | yes |
 | Districts with matching mandates | 17/19 | | partial |
+| Single-member seat counts per district | 19/19 match | | yes |
 
-Two mandate mismatches (Lisboa 1 = 15 vs client 16; Lisboa 3 = 16 vs
-client 15) reflect the algorithm's voter-balanced sub-district choice
-versus the client's manual mapping. Total Lisboa mandates (47) are
-preserved. See `docs/design_notes.md` section 4.
+The two mandate mismatches (Lisboa 1 = 15 vs client 16; Lisboa 3 = 16
+vs client 15) reflect the algorithm's voter-balanced sub-district
+choice versus the client's manual mapping. Total Lisboa mandates (47)
+are preserved.
 
 End-to-end pipeline produces:
 - 19 redesigned upper-tier districts
 - 74 lower-tier (single-member) districts
 - 152 party-list seats allocated by D'Hondt
 - 71/74 lower districts contiguous (3 island districts use virtual bridges)
-- 63/74 within 10% voter-deviation tolerance
 - 1 lower district has no recorded votes (data quality issue,
-  documented in diagnostics CSV)
+  documented in `/api/.../diagnostics`)
 
-## Final output package
+## API
 
-After running all scripts, `outputs/` contains:
+The backend exposes a read-only HTTP API. See
+`docs/frontend_api_guide.md` for full documentation and
+`http://localhost:8000/docs` for the interactive Swagger UI.
 
-```
-outputs/
-├── geojson/
-│   ├── upper_districts.geojson      # 19 polygons + voters + mandates
-│   └── lower_districts.geojson      # 74 polygons + winning_party + colour
-├── tables/
-│   ├── upper_district_membership.csv     # parish -> upper_district
-│   ├── upper_district_diagnostics.csv    # voters, mandates per district
-│   ├── hamilton_allocation.csv           # quota / floor / remainder / seats
-│   ├── tier_split.csv                    # P_i / U_i per district
-│   ├── upper_district_party_votes.csv    # vote totals per (district, party)
-│   ├── dhondt_results_by_district.csv    # party-list seat allocation
-│   ├── lower_district_membership.csv     # parish -> lower_district
-│   ├── lower_district_diagnostics.csv    # contiguity, deviation, notes
-│   ├── lower_district_party_votes.csv    # vote totals per (lower, party)
-│   ├── single_member_winners.csv         # winning_party per lower district
-│   ├── party_seat_breakdown.csv          # (district, party) seat detail
-│   └── final_party_seat_results.csv      # national totals per party
-├── json/
-│   └── final_party_seat_results.json     # parliament-chart-ready
-└── documentation/
-    ├── scenario_config.json              # snapshot of run config
-    └── data_dictionary.csv               # field definitions
+| Endpoint | Returns |
+|---|---|
+| `/api/health` | Backend status |
+| `/api/scenarios` | List of scenarios |
+| `/api/scenarios/{id}/config` | Scenario config (year, total seats, methods) |
+| `/api/scenarios/{id}/parties` | Party metadata (id, name, colour) |
+| `/api/scenarios/{id}/maps/upper-districts` | Upper-tier polygons GeoJSON |
+| `/api/scenarios/{id}/maps/lower-districts` | Lower-tier polygons GeoJSON with winners |
+| `/api/scenarios/{id}/results/final` | National party seat totals |
+| `/api/scenarios/{id}/results/hamilton` | Hamilton apportionment table |
+| `/api/scenarios/{id}/results/tier-split` | Per-district party-list / single-member split |
+| `/api/scenarios/{id}/results/dhondt` | D'Hondt allocations per (district, party) |
+| `/api/scenarios/{id}/results/single-member-winners` | Winners and margins |
+| `/api/scenarios/{id}/diagnostics` | Validation status and warnings |
 
-```
+All responses use slug-style ids (e.g. `psd_cds`, `lisboa_1`) for
+machine-friendly keys; display names are kept as separate fields.
 
 ## Configuration
 
@@ -148,12 +166,21 @@ All policy choices live in `config/scenario_config.json`:
 - `upper_tier_redesign.merge_groups` — which distritos merge
 - `upper_tier_redesign.split_rules` — which distritos split, into k pieces
 - `upper_tier_redesign.always_merged` — Madeira and Açores
-- `lower_tier.skip_districts`, `tolerance`, etc.
+- `lower_tier.skip_districts`, `tolerance`, `seed_strategy`, etc.
 
 Changing any of these does not require code edits. Adding a new
 *algorithm* (e.g. an automatic merge-discovery heuristic) does require
 code; the config keeps a `merge_strategy` field that can dispatch to
 future implementations.
+
+## Tests
+
+```bash
+pytest tests/ -v
+```
+
+25 tests covering Hamilton/tier-split/D'Hondt correctness, schema
+validation, and end-to-end backend behaviour.
 
 ## License
 

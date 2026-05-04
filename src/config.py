@@ -101,6 +101,16 @@ class Config:
             p = PROJECT_ROOT / p
         return p
 
+    def scenario_outputs_dir(self) -> Path:
+        """Absolute path to this scenario's outputs subdirectory.
+
+        Layout is outputs/scenarios/<scenario_id>/, which keeps multiple
+        scenarios separable for the API layer to switch between.
+        """
+        base = self.path("outputs_dir")
+        sub = self.paths.get("scenarios_subdir", Path("scenarios"))
+        return base / sub / self.scenario_id
+
     def merge_group_lookup(self) -> dict[str, str]:
         """Build distrito_name -> redesigned_district_name map for ALL merge groups
         (both manual merge_groups and always_merged)."""

@@ -55,9 +55,10 @@ def main() -> int:
         client[c] = client[c].astype(int)
 
     # Load our outputs.
-    ham = pd.read_csv(ROOT / "outputs" / "tables" / "hamilton_allocation.csv")
-    tier = pd.read_csv(ROOT / "outputs" / "tables" / "tier_split.csv")
-    diag = pd.read_csv(ROOT / "outputs" / "tables" / "upper_district_diagnostics.csv")
+    out_tables = cfg.scenario_outputs_dir() / "tables"
+    ham = pd.read_csv(out_tables / "hamilton_allocation.csv")
+    tier = pd.read_csv(out_tables / "tier_split.csv")
+    diag = pd.read_csv(out_tables / "upper_district_diagnostics.csv")
 
     # Merge.
     ours = ham.merge(tier, on=["upper_district", "total_mandates"])

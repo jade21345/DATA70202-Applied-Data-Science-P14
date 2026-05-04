@@ -1,22 +1,22 @@
-party_id,display_name,short_name,color,notes
-PS,Partido Socialista,PS,#FF66B2,Centre-left main party
-PPD/PSD.CDS-PP,PSD/CDS coalition,PSD-CDS,#FF8C00,Right-of-centre coalition (most districts)
-PPD/PSD.CDS-PP.PPM,PSD/CDS/PPM coalition,PSD-CDS-PPM,#FFA500,Variant including PPM (some districts only)
-CH,Chega,CH,#1F5DA0,Right-wing populist
-IL,Iniciativa Liberal,IL,#00C0F0,Liberal
-L,Livre,L,#00A859,Green-left
-PCP-PEV,CDU (PCP-PEV),CDU,#CC0000,Communist + Greens coalition
-B.E.,Bloco de Esquerda,BE,#A20025,Left-wing
-PAN,Pessoas-Animais-Natureza,PAN,#0AAB6F,Animal-environment
-ADN,Alternativa Democrática Nacional,ADN,#3F51B5,
-JPP,Juntos Pelo Povo,JPP,#FFD700,Madeira regional
-PPM,Partido Popular Monárquico,PPM,#1F4E5F,
-PCTP/MRPP,PCTP/MRPP,MRPP,#8B0000,
-MPT,Partido da Terra,MPT,#388E3C,
-PTP,Partido Trabalhista Português,PTP,#E91E63,
-R.I.R.,Reagir Incluir Reciclar,RIR,#9C27B0,
-VP,Volt Portugal,VP,#5C2D91,Pan-European
-NC,Nós Cidadãos,NC,#607D8B,
-ND,Nova Direita,ND,#795548,
-PLS,Partido Liberal Social,PLS,#00BCD4,
-E,Ergue-te,E,#424242,
+party_id,party_id_short,display_name,short_name,color,notes
+PS,ps,Partido Socialista,PS,#FF66B2,Centre-left main party
+PPD/PSD.CDS-PP,psd_cds,PSD/CDS coalition,PSD-CDS,#FF8C00,Right-of-centre coalition (most districts)
+PPD/PSD.CDS-PP.PPM,psd_cds_ppm,PSD/CDS/PPM coalition,PSD-CDS-PPM,#FFA500,Variant including PPM (some districts only)
+CH,ch,Chega,CH,#1F5DA0,Right-wing populist
+IL,il,Iniciativa Liberal,IL,#00C0F0,Liberal
+L,l,Livre,L,#00A859,Green-left
+PCP-PEV,cdu,CDU (PCP-PEV),CDU,#CC0000,Communist + Greens coalition
+B.E.,be,Bloco de Esquerda,BE,#A20025,Left-wing
+PAN,pan,Pessoas-Animais-Natureza,PAN,#0AAB6F,Animal-environment
+ADN,adn,Alternativa Democrática Nacional,ADN,#3F51B5,
+JPP,jpp,Juntos Pelo Povo,JPP,#FFD700,Madeira regional
+PPM,ppm,Partido Popular Monárquico,PPM,#1F4E5F,
+PCTP/MRPP,mrpp,PCTP/MRPP,MRPP,#8B0000,
+MPT,mpt,Partido da Terra,MPT,#388E3C,
+PTP,ptp,Partido Trabalhista Português,PTP,#E91E63,
+R.I.R.,rir,Reagir Incluir Reciclar,RIR,#9C27B0,
+VP,vp,Volt Portugal,VP,#5C2D91,Pan-European
+NC,nc,Nós Cidadãos,NC,#607D8B,
+ND,nd,Nova Direita,ND,#795548,
+PLS,pls,Partido Liberal Social,PLS,#00BCD4,
+E,e,Ergue-te,E,#424242,

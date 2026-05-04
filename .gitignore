@@ -1,26 +1,14 @@
-# Raw data — too large, document source in README
+# Raw and intermediate data — too large for git, regenerable from sources
 data_raw/
-
-# Intermediate pipeline products — regenerable
+data_clean/
 intermediate/
+outputs/
 
-# Clean data — keep small tabular files, exclude large geo files
-data_clean/*.gpkg
-data_clean/*.shp
-data_clean/*.shx
-data_clean/*.dbf
-
-# Outputs — keep frontend-ready exports, exclude preview images
-outputs/*
-!outputs/geojson/
-!outputs/tables/
-!outputs/json/
-!outputs/documentation/
-!outputs/.gitkeep
-
-# Keep directory placeholders
+# But keep the directory structure
 !data_raw/.gitkeep
+!data_clean/.gitkeep
 !intermediate/.gitkeep
+!outputs/.gitkeep
 
 # Internal notes (Chinese-language working notes)
 docs/notes_zh.md

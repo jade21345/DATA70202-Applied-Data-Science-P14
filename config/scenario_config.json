@@ -1,5 +1,5 @@
 {
-  "scenario_id": "baseline_2025_mixed_model",
+  "scenario_id": "baseline_2025",
   "scenario_name": "Baseline 2025 Mixed-Member Model",
   "election_year": 2025,
   "data_version": "v1.0",
@@ -112,6 +112,7 @@
     "clean_election_csv": "data_clean/votes_2025.csv",
     "clean_voters_csv": "data_clean/voters_2025.csv",
 
-    "outputs_dir": "outputs"
+    "outputs_dir": "outputs",
+    "scenarios_subdir": "scenarios"
   }
 }
