@@ -293,13 +293,71 @@ def voters_by_parish(votes_long: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
-def write_geojson(gdf: gpd.GeoDataFrame, path: str | Path, export_crs: str = "EPSG:4326") -> None:
-    """Write a GeoDataFrame to GeoJSON in the export CRS."""
+def write_geojson(
+    gdf: gpd.GeoDataFrame,
+    path: str | Path,
+    export_crs: str = "EPSG:4326",
+    coordinate_precision: int = 6,
+) -> None:
+    """Write a GeoDataFrame to GeoJSON in the export CRS.
+
+    The default ``coordinate_precision=6`` (about 11 cm at the equator)
+    is more than enough for parish-level cartography and reduces file
+    size by roughly 60 percent compared with the GeoJSON default of 15
+    significant digits. The full Portuguese mainland fits comfortably
+    inside this precision: any apparent boundary mismatch caused by
+    rounding is well below the precision of the source CAOP polygons
+    themselves.
+
+    Pass ``coordinate_precision=None`` to disable rounding (full
+    floating-point precision; use only when the consumer needs sub-cm
+    accuracy, which is never for web maps).
+    """
     out = gdf.to_crs(export_crs) if str(gdf.crs) != export_crs else gdf
     out_path = Path(path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out.to_file(out_path, driver="GeoJSON")
+
+    if coordinate_precision is None:
+        out.to_file(out_path, driver="GeoJSON")
+    else:
+        # pyogrio supports COORDINATE_PRECISION via the dataset_options
+        # argument. Fall back to a manual JSON rewrite if pyogrio is
+        # too old to support it.
+        try:
+            out.to_file(
+                out_path,
+                driver="GeoJSON",
+                COORDINATE_PRECISION=coordinate_precision,
+            )
+        except TypeError:
+            # Old pyogrio: write full precision then truncate via JSON
+            # round-trip. Slower but always correct.
+            out.to_file(out_path, driver="GeoJSON")
+            _round_geojson_coordinates(out_path, coordinate_precision)
     logger.info("Wrote GeoJSON: %s (%d features)", out_path, len(out))
+
+
+def _round_geojson_coordinates(path: Path, precision: int) -> None:
+    """Round all numeric coordinates in a GeoJSON file in place."""
+    import json as _json
+
+    with path.open("r", encoding="utf-8") as f:
+        data = _json.load(f)
+
+    def round_coords(c):
+        if isinstance(c, (int, float)):
+            return round(float(c), precision)
+        if isinstance(c, list):
+            return [round_coords(x) for x in c]
+        return c
+
+    for feat in data.get("features", []):
+        geom = feat.get("geometry")
+        if geom and "coordinates" in geom:
+            geom["coordinates"] = round_coords(geom["coordinates"])
+
+    with path.open("w", encoding="utf-8") as f:
+        _json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
 
 
 def write_csv(df: pd.DataFrame, path: str | Path) -> None:

@@ -286,6 +286,17 @@ def main(argv: list[str] | None = None) -> int:
     # Upper districts.
     dissolved_upper = parishes_assigned.dissolve(by="upper_district").reset_index()
     dissolved_upper = dissolved_upper[["upper_district", "geometry"]]
+
+    # Apply Douglas-Peucker simplification in the projected CRS for
+    # accurate metre-based tolerance. 50m is invisible at typical web
+    # zoom levels (parish polygons are kilometres across) and cuts
+    # file size by an order of magnitude. preserve_topology=True
+    # keeps shared boundaries between adjacent districts consistent.
+    if cfg.geojson_simplify_tolerance_meters > 0:
+        dissolved_upper["geometry"] = dissolved_upper.geometry.simplify(
+            cfg.geojson_simplify_tolerance_meters, preserve_topology=True,
+        )
+
     dissolved_upper = (
         dissolved_upper
         .merge(district_voters, on="upper_district")
@@ -301,7 +312,10 @@ def main(argv: list[str] | None = None) -> int:
     dissolved_upper["scenario_id"] = cfg.scenario_id
     dissolved_upper = dissolved_upper.drop(columns=["upper_district"])
     dissolved_upper = gpd.GeoDataFrame(dissolved_upper, crs=parishes_assigned.crs)
-    write_geojson(dissolved_upper, out_geojson / "upper_districts.geojson", cfg.export_crs)
+    write_geojson(
+        dissolved_upper, out_geojson / "upper_districts.geojson",
+        cfg.export_crs, coordinate_precision=cfg.geojson_coordinate_precision,
+    )
 
     # Lower districts.
     parish_to_lower = lower_membership.merge(
@@ -309,6 +323,12 @@ def main(argv: list[str] | None = None) -> int:
     )
     parish_to_lower = gpd.GeoDataFrame(parish_to_lower, crs=parishes_assigned.crs)
     dissolved_lower = parish_to_lower.dissolve(by="lower_district").reset_index()
+
+    if cfg.geojson_simplify_tolerance_meters > 0:
+        dissolved_lower["geometry"] = dissolved_lower.geometry.simplify(
+            cfg.geojson_simplify_tolerance_meters, preserve_topology=True,
+        )
+
     dissolved_lower = (
         dissolved_lower[["lower_district", "geometry"]]
         .merge(lower_diag, on="lower_district")
@@ -328,7 +348,10 @@ def main(argv: list[str] | None = None) -> int:
     dissolved_lower["scenario_id"] = cfg.scenario_id
     dissolved_lower = dissolved_lower.drop(columns=["lower_district", "parent_upper_district"])
     dissolved_lower = gpd.GeoDataFrame(dissolved_lower, crs=parishes_assigned.crs)
-    write_geojson(dissolved_lower, out_geojson / "lower_districts.geojson", cfg.export_crs)
+    write_geojson(
+        dissolved_lower, out_geojson / "lower_districts.geojson",
+        cfg.export_crs, coordinate_precision=cfg.geojson_coordinate_precision,
+    )
 
     # ------------------------------------------------------------------
     # 13. scenario_summary.json (compact summary for the frontend home page)

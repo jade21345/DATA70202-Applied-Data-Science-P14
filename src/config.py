@@ -85,6 +85,9 @@ class Config:
     internal_crs: str
     export_crs: str
 
+    geojson_coordinate_precision: int
+    geojson_simplify_tolerance_meters: float
+
     paths: dict[str, Path]
 
     raw: dict[str, Any] = field(repr=False, default_factory=dict)
@@ -193,6 +196,10 @@ def load_config(path: str | Path | None = None) -> Config:
 
     paths = {k: Path(v) for k, v in raw["paths"].items()}
 
+    geojson_raw = raw.get("geojson_export", {}) or {}
+    geojson_precision = int(geojson_raw.get("coordinate_precision", 6))
+    geojson_simplify = float(geojson_raw.get("simplify_tolerance_meters", 50) or 0)
+
     cfg = Config(
         scenario_id=raw["scenario_id"],
         scenario_name=raw["scenario_name"],
@@ -212,6 +219,8 @@ def load_config(path: str | Path | None = None) -> Config:
         lower_tier=lower,
         internal_crs=raw["crs"]["internal"],
         export_crs=raw["crs"]["export"],
+        geojson_coordinate_precision=geojson_precision,
+        geojson_simplify_tolerance_meters=geojson_simplify,
         paths=paths,
         raw=raw,
     )

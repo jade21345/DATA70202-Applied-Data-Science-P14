@@ -1,0 +1,296 @@
+upper_district,party,party_list_seats,single_member_seats,total_seats
+Alentejo,CH,2,2,4
+Alentejo,PS,2,1,3
+Alentejo,PPD/PSD.CDS-PP,1,0,1
+Alentejo,ADN,0,0,0
+Alentejo,B.E.,0,0,0
+Alentejo,E,0,0,0
+Alentejo,IL,0,0,0
+Alentejo,L,0,0,0
+Alentejo,NC,0,0,0
+Alentejo,ND,0,0,0
+Alentejo,PAN,0,0,0
+Alentejo,PCP-PEV,0,0,0
+Alentejo,PCTP/MRPP,0,0,0
+Alentejo,PPM,0,0,0
+Alentejo,R.I.R.,0,0,0
+Alentejo,VP,0,0,0
+Aveiro,PPD/PSD.CDS-PP,5,5,10
+Aveiro,CH,3,0,3
+Aveiro,PS,3,0,3
+Aveiro,ADN,0,0,0
+Aveiro,B.E.,0,0,0
+Aveiro,E,0,0,0
+Aveiro,IL,0,0,0
+Aveiro,L,0,0,0
+Aveiro,NC,0,0,0
+Aveiro,ND,0,0,0
+Aveiro,PAN,0,0,0
+Aveiro,PCP-PEV,0,0,0
+Aveiro,PCTP/MRPP,0,0,0
+Aveiro,PPM,0,0,0
+Aveiro,R.I.R.,0,0,0
+Aveiro,VP,0,0,0
+Açores,PPD/PSD.CDS-PP.PPM,2,2,4
+Açores,CH,1,0,1
+Açores,PS,1,0,1
+Açores,ADN,0,0,0
+Açores,B.E.,0,0,0
+Açores,E,0,0,0
+Açores,IL,0,0,0
+Açores,JPP,0,0,0
+Açores,L,0,0,0
+Açores,MPT,0,0,0
+Açores,PAN,0,0,0
+Açores,PCP-PEV,0,0,0
+Açores,R.I.R.,0,0,0
+Beira Baixa,PPD/PSD.CDS-PP,2,3,5
+Beira Baixa,CH,1,0,1
+Beira Baixa,PS,1,0,1
+Beira Baixa,ADN,0,0,0
+Beira Baixa,B.E.,0,0,0
+Beira Baixa,E,0,0,0
+Beira Baixa,IL,0,0,0
+Beira Baixa,L,0,0,0
+Beira Baixa,NC,0,0,0
+Beira Baixa,PAN,0,0,0
+Beira Baixa,PCP-PEV,0,0,0
+Beira Baixa,PCTP/MRPP,0,0,0
+Beira Baixa,PPM,0,0,0
+Beira Baixa,R.I.R.,0,0,0
+Beira Baixa,VP,0,0,0
+Braga,PPD/PSD.CDS-PP,6,6,12
+Braga,CH,3,0,3
+Braga,PS,3,0,3
+Braga,IL,1,0,1
+Braga,ADN,0,0,0
+Braga,B.E.,0,0,0
+Braga,E,0,0,0
+Braga,JPP,0,0,0
+Braga,L,0,0,0
+Braga,ND,0,0,0
+Braga,PAN,0,0,0
+Braga,PCP-PEV,0,0,0
+Braga,PPM,0,0,0
+Braga,R.I.R.,0,0,0
+Braga,VP,0,0,0
+Coimbra,PPD/PSD.CDS-PP,3,3,6
+Coimbra,PS,2,0,2
+Coimbra,CH,1,0,1
+Coimbra,ADN,0,0,0
+Coimbra,B.E.,0,0,0
+Coimbra,E,0,0,0
+Coimbra,IL,0,0,0
+Coimbra,JPP,0,0,0
+Coimbra,L,0,0,0
+Coimbra,ND,0,0,0
+Coimbra,PAN,0,0,0
+Coimbra,PCP-PEV,0,0,0
+Coimbra,PPM,0,0,0
+Coimbra,R.I.R.,0,0,0
+Coimbra,VP,0,0,0
+Faro,CH,3,3,6
+Faro,PPD/PSD.CDS-PP,2,0,2
+Faro,PS,1,0,1
+Faro,ADN,0,0,0
+Faro,B.E.,0,0,0
+Faro,E,0,0,0
+Faro,IL,0,0,0
+Faro,JPP,0,0,0
+Faro,L,0,0,0
+Faro,ND,0,0,0
+Faro,PAN,0,0,0
+Faro,PCP-PEV,0,0,0
+Faro,PPM,0,0,0
+Faro,R.I.R.,0,0,0
+Faro,VP,0,0,0
+Leiria,PPD/PSD.CDS-PP,3,3,6
+Leiria,CH,2,0,2
+Leiria,PS,2,0,2
+Leiria,ADN,0,0,0
+Leiria,B.E.,0,0,0
+Leiria,E,0,0,0
+Leiria,IL,0,0,0
+Leiria,L,0,0,0
+Leiria,ND,0,0,0
+Leiria,PAN,0,0,0
+Leiria,PCP-PEV,0,0,0
+Leiria,PPM,0,0,0
+Leiria,R.I.R.,0,0,0
+Leiria,VP,0,0,0
+Lisboa 1,PPD/PSD.CDS-PP,4,4,8
+Lisboa 1,PS,3,1,4
+Lisboa 1,CH,2,0,2
+Lisboa 1,IL,1,0,1
+Lisboa 1,ADN,0,0,0
+Lisboa 1,B.E.,0,0,0
+Lisboa 1,E,0,0,0
+Lisboa 1,JPP,0,0,0
+Lisboa 1,L,0,0,0
+Lisboa 1,NC,0,0,0
+Lisboa 1,ND,0,0,0
+Lisboa 1,PAN,0,0,0
+Lisboa 1,PCP-PEV,0,0,0
+Lisboa 1,PCTP/MRPP,0,0,0
+Lisboa 1,PLS,0,0,0
+Lisboa 1,PPM,0,0,0
+Lisboa 1,R.I.R.,0,0,0
+Lisboa 1,VP,0,0,0
+Lisboa 2,PPD/PSD.CDS-PP,4,4,8
+Lisboa 2,CH,2,1,3
+Lisboa 2,PS,3,0,3
+Lisboa 2,IL,1,0,1
+Lisboa 2,L,1,0,1
+Lisboa 2,ADN,0,0,0
+Lisboa 2,B.E.,0,0,0
+Lisboa 2,E,0,0,0
+Lisboa 2,JPP,0,0,0
+Lisboa 2,NC,0,0,0
+Lisboa 2,ND,0,0,0
+Lisboa 2,PAN,0,0,0
+Lisboa 2,PCP-PEV,0,0,0
+Lisboa 2,PCTP/MRPP,0,0,0
+Lisboa 2,PLS,0,0,0
+Lisboa 2,PPM,0,0,0
+Lisboa 2,R.I.R.,0,0,0
+Lisboa 2,VP,0,0,0
+Lisboa 3,PPD/PSD.CDS-PP,4,3,7
+Lisboa 3,CH,3,1,4
+Lisboa 3,PS,3,1,4
+Lisboa 3,IL,1,0,1
+Lisboa 3,ADN,0,0,0
+Lisboa 3,B.E.,0,0,0
+Lisboa 3,E,0,0,0
+Lisboa 3,JPP,0,0,0
+Lisboa 3,L,0,0,0
+Lisboa 3,NC,0,0,0
+Lisboa 3,ND,0,0,0
+Lisboa 3,PAN,0,0,0
+Lisboa 3,PCP-PEV,0,0,0
+Lisboa 3,PCTP/MRPP,0,0,0
+Lisboa 3,PLS,0,0,0
+Lisboa 3,PPM,0,0,0
+Lisboa 3,R.I.R.,0,0,0
+Lisboa 3,VP,0,0,0
+Madeira,PPD/PSD.CDS-PP,3,2,5
+Madeira,CH,1,0,1
+Madeira,ADN,0,0,0
+Madeira,B.E.,0,0,0
+Madeira,E,0,0,0
+Madeira,IL,0,0,0
+Madeira,JPP,0,0,0
+Madeira,L,0,0,0
+Madeira,MPT,0,0,0
+Madeira,ND,0,0,0
+Madeira,PAN,0,0,0
+Madeira,PCP-PEV,0,0,0
+Madeira,PPM,0,0,0
+Madeira,PS,0,0,0
+Madeira,PTP,0,0,0
+Madeira,R.I.R.,0,0,0
+Porto 1,PPD/PSD.CDS-PP,6,5,11
+Porto 1,PS,4,0,4
+Porto 1,CH,3,0,3
+Porto 1,ADN,0,0,0
+Porto 1,B.E.,0,0,0
+Porto 1,E,0,0,0
+Porto 1,IL,0,0,0
+Porto 1,JPP,0,0,0
+Porto 1,L,0,0,0
+Porto 1,NC,0,0,0
+Porto 1,ND,0,0,0
+Porto 1,PAN,0,0,0
+Porto 1,PCP-PEV,0,0,0
+Porto 1,PCTP/MRPP,0,0,0
+Porto 1,PLS,0,0,0
+Porto 1,PPM,0,0,0
+Porto 1,R.I.R.,0,0,0
+Porto 1,VP,0,0,0
+Porto 2,PPD/PSD.CDS-PP,6,6,12
+Porto 2,PS,4,0,4
+Porto 2,CH,3,0,3
+Porto 2,IL,1,0,1
+Porto 2,ADN,0,0,0
+Porto 2,B.E.,0,0,0
+Porto 2,E,0,0,0
+Porto 2,JPP,0,0,0
+Porto 2,L,0,0,0
+Porto 2,NC,0,0,0
+Porto 2,ND,0,0,0
+Porto 2,PAN,0,0,0
+Porto 2,PCP-PEV,0,0,0
+Porto 2,PCTP/MRPP,0,0,0
+Porto 2,PLS,0,0,0
+Porto 2,PPM,0,0,0
+Porto 2,R.I.R.,0,0,0
+Porto 2,VP,0,0,0
+Santarém,PPD/PSD.CDS-PP,2,2,4
+Santarém,CH,2,1,3
+Santarém,PS,2,0,2
+Santarém,ADN,0,0,0
+Santarém,B.E.,0,0,0
+Santarém,E,0,0,0
+Santarém,IL,0,0,0
+Santarém,L,0,0,0
+Santarém,PAN,0,0,0
+Santarém,PCP-PEV,0,0,0
+Santarém,PPM,0,0,0
+Santarém,R.I.R.,0,0,0
+Santarém,VP,0,0,0
+Setúbal,CH,4,4,8
+Setúbal,PS,4,1,5
+Setúbal,PPD/PSD.CDS-PP,3,1,4
+Setúbal,L,1,0,1
+Setúbal,PCP-PEV,1,0,1
+Setúbal,ADN,0,0,0
+Setúbal,B.E.,0,0,0
+Setúbal,E,0,0,0
+Setúbal,IL,0,0,0
+Setúbal,JPP,0,0,0
+Setúbal,NC,0,0,0
+Setúbal,ND,0,0,0
+Setúbal,PAN,0,0,0
+Setúbal,PCTP/MRPP,0,0,0
+Setúbal,PLS,0,0,0
+Setúbal,PPM,0,0,0
+Setúbal,R.I.R.,0,0,0
+Setúbal,VP,0,0,0
+Trás-os-Montes,PPD/PSD.CDS-PP,3,3,6
+Trás-os-Montes,CH,1,0,1
+Trás-os-Montes,PS,1,0,1
+Trás-os-Montes,ADN,0,0,0
+Trás-os-Montes,B.E.,0,0,0
+Trás-os-Montes,E,0,0,0
+Trás-os-Montes,IL,0,0,0
+Trás-os-Montes,L,0,0,0
+Trás-os-Montes,PAN,0,0,0
+Trás-os-Montes,PCP-PEV,0,0,0
+Trás-os-Montes,PPM,0,0,0
+Trás-os-Montes,R.I.R.,0,0,0
+Trás-os-Montes,VP,0,0,0
+Viana do Castelo,PPD/PSD.CDS-PP,2,2,4
+Viana do Castelo,CH,1,0,1
+Viana do Castelo,PS,1,0,1
+Viana do Castelo,ADN,0,0,0
+Viana do Castelo,B.E.,0,0,0
+Viana do Castelo,E,0,0,0
+Viana do Castelo,IL,0,0,0
+Viana do Castelo,L,0,0,0
+Viana do Castelo,PAN,0,0,0
+Viana do Castelo,PCP-PEV,0,0,0
+Viana do Castelo,PPM,0,0,0
+Viana do Castelo,R.I.R.,0,0,0
+Viana do Castelo,VP,0,0,0
+Viseu,PPD/PSD.CDS-PP,3,3,6
+Viseu,CH,1,0,1
+Viseu,PS,1,0,1
+Viseu,ADN,0,0,0
+Viseu,B.E.,0,0,0
+Viseu,E,0,0,0
+Viseu,IL,0,0,0
+Viseu,L,0,0,0
+Viseu,ND,0,0,0
+Viseu,PCP-PEV,0,0,0
+Viseu,PPM,0,0,0
+Viseu,R.I.R.,0,0,0
+Viseu,VP,0,0,0

@@ -1,0 +1,19 @@
+{
+  "scenario_id": "baseline_2025",
+  "scenario_name": "Baseline 2025 Mixed-Member Model",
+  "election_year": 2025,
+  "total_seats": 226,
+  "allocated_seats": 225,
+  "party_list_seats_total": 152,
+  "single_member_seats_total": 74,
+  "n_upper_districts": 19,
+  "n_lower_districts": 74,
+  "tier_split_rounding": "floor",
+  "party_list_ratio": 0.7,
+  "single_member_ratio": 0.3,
+  "district_apportionment_method": "Hamilton",
+  "party_list_allocation_method": "DHondt",
+  "lower_tier_method": "seed_region_growing",
+  "data_version": "v1.0",
+  "created_at": "2026-05-03"
+}

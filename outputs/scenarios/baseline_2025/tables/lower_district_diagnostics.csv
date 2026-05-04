@@ -1,0 +1,75 @@
+lower_district,parent_upper_district,n_parishes,registered_voters,target_voters,deviation,is_contiguous,notes
+Alentejo - SM 1,Alentejo,70,114402,114491,-0.0008,True,
+Alentejo - SM 2,Alentejo,88,114549,114491,0.0005,True,
+Alentejo - SM 3,Alentejo,73,114522,114491,0.0003,True,
+Aveiro - SM 1,Aveiro,32,129861,128409,0.0113,True,
+Aveiro - SM 2,Aveiro,35,128299,128409,-0.0009,True,
+Aveiro - SM 3,Aveiro,25,127300,128409,-0.0086,True,
+Aveiro - SM 4,Aveiro,51,128844,128409,0.0034,True,
+Aveiro - SM 5,Aveiro,31,127743,128409,-0.0052,True,
+Açores - SM 1,Açores,64,129238,115146,0.1224,True,deviation +12.2% exceeds tolerance 10%
+Açores - SM 2,Açores,92,101054,115146,-0.1224,False,deviation -12.2% exceeds tolerance 10%; not contiguous
+Beira Baixa - SM 1,Beira Baixa,173,100697,100693,0.0,True,
+Beira Baixa - SM 2,Beira Baixa,124,100698,100693,0.0001,True,
+Beira Baixa - SM 3,Beira Baixa,76,100683,100693,-0.0001,False,not contiguous
+Braga - SM 1,Braga,44,130528,130394,0.001,True,
+Braga - SM 2,Braga,109,130223,130394,-0.0013,True,
+Braga - SM 3,Braga,69,130370,130394,-0.0002,True,
+Braga - SM 4,Braga,44,130321,130394,-0.0006,True,
+Braga - SM 5,Braga,53,130511,130394,0.0009,True,
+Braga - SM 6,Braga,52,130413,130394,0.0001,True,
+Coimbra - SM 1,Coimbra,56,123357,123591,-0.0019,True,
+Coimbra - SM 2,Coimbra,47,123998,123591,0.0033,True,
+Coimbra - SM 3,Coimbra,58,123419,123591,-0.0014,True,
+Faro - SM 1,Faro,25,128654,127981,0.0053,True,
+Faro - SM 2,Faro,31,127263,127981,-0.0056,True,
+Faro - SM 3,Faro,20,128027,127981,0.0004,True,
+Leiria - SM 1,Leiria,26,137368,137329,0.0003,True,
+Leiria - SM 2,Leiria,42,137274,137329,-0.0004,True,
+Leiria - SM 3,Leiria,48,137345,137329,0.0001,True,
+Lisboa 1 - SM 1,Lisboa 1,2,125507,118020,0.0634,True,
+Lisboa 1 - SM 2,Lisboa 1,4,125396,118020,0.0625,True,
+Lisboa 1 - SM 3,Lisboa 1,4,110918,118020,-0.0602,True,
+Lisboa 1 - SM 4,Lisboa 1,4,117969,118020,-0.0004,True,
+Lisboa 1 - SM 5,Lisboa 1,5,110308,118020,-0.0653,True,
+Lisboa 2 - SM 1,Lisboa 2,40,206596,133464,0.548,True,deviation +54.8% exceeds tolerance 10%
+Lisboa 2 - SM 2,Lisboa 2,8,129765,133464,-0.0277,True,
+Lisboa 2 - SM 3,Lisboa 2,6,132507,133464,-0.0072,True,
+Lisboa 2 - SM 4,Lisboa 2,2,61262,133464,-0.541,True,deviation -54.1% exceeds tolerance 10%
+Lisboa 2 - SM 5,Lisboa 2,8,137188,133464,0.0279,True,
+Lisboa 3 - SM 1,Lisboa 3,3,156743,131106,0.1955,True,deviation +19.6% exceeds tolerance 10%
+Lisboa 3 - SM 2,Lisboa 3,22,129976,131106,-0.0086,True,
+Lisboa 3 - SM 3,Lisboa 3,10,132038,131106,0.0071,True,
+Lisboa 3 - SM 4,Lisboa 3,7,107072,131106,-0.1833,True,deviation -18.3% exceeds tolerance 10%
+Lisboa 3 - SM 5,Lisboa 3,16,129699,131106,-0.0107,True,
+Madeira - SM 1,Madeira,29,129209,127902,0.0102,True,
+Madeira - SM 2,Madeira,25,126594,127902,-0.0102,False,not contiguous
+Porto 1 - SM 1,Porto 1,77,207214,132229,0.5671,True,deviation +56.7% exceeds tolerance 10%
+Porto 1 - SM 2,Porto 1,76,218495,132229,0.6524,True,deviation +65.2% exceeds tolerance 10%
+Porto 1 - SM 3,Porto 1,8,85204,132229,-0.3556,True,deviation -35.6% exceeds tolerance 10%
+Porto 1 - SM 4,Porto 1,8,122867,132229,-0.0708,True,
+Porto 1 - SM 5,Porto 1,8,103005,132229,-0.221,True,deviation -22.1% exceeds tolerance 10%
+Porto 1 - SM 6,Porto 1,5,56591,132229,-0.572,True,deviation -57.2% exceeds tolerance 10%
+Porto 2 - SM 1,Porto 2,5,138881,132998,0.0442,True,
+Porto 2 - SM 2,Porto 2,29,134157,132998,0.0087,True,
+Porto 2 - SM 3,Porto 2,21,132813,132998,-0.0014,True,
+Porto 2 - SM 4,Porto 2,13,133520,132998,0.0039,True,
+Porto 2 - SM 5,Porto 2,15,134563,132998,0.0118,True,
+Porto 2 - SM 6,Porto 2,10,124051,132998,-0.0673,True,
+Santarém - SM 1,Santarém,55,125680,125804,-0.001,True,
+Santarém - SM 2,Santarém,49,125723,125804,-0.0006,True,
+Santarém - SM 3,Santarém,46,126010,125804,0.0016,True,
+Setúbal - SM 1,Setúbal,3,120625,125788,-0.041,True,
+Setúbal - SM 2,Setúbal,11,130636,125788,0.0385,True,
+Setúbal - SM 3,Setúbal,13,117806,125788,-0.0635,True,
+Setúbal - SM 4,Setúbal,20,136705,125788,0.0868,True,
+Setúbal - SM 5,Setúbal,7,128841,125788,0.0243,True,
+Setúbal - SM 6,Setúbal,6,120112,125788,-0.0451,True,
+Trás-os-Montes - SM 1,Trás-os-Montes,125,113364,113221,0.0013,True,
+Trás-os-Montes - SM 2,Trás-os-Montes,176,113191,113221,-0.0003,True,
+Trás-os-Montes - SM 3,Trás-os-Montes,125,113108,113221,-0.001,True,
+Viana do Castelo - SM 1,Viana do Castelo,66,116151,116290,-0.0012,True,
+Viana do Castelo - SM 2,Viana do Castelo,147,116428,116290,0.0012,True,
+Viseu - SM 1,Viseu,121,111271,111346,-0.0007,True,
+Viseu - SM 2,Viseu,84,111403,111346,0.0005,True,
+Viseu - SM 3,Viseu,77,111363,111346,0.0002,True,
